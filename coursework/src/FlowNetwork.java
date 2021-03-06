@@ -91,6 +91,32 @@ public class FlowNetwork {
         adjacencyList.get(w).remove(edge);
     }
 
+    public boolean breadthFirstSearch(int source, FlowEdge[] edgeTo, int target) {
+        //*mark an edge as true, if the edge is in the residual network*//
+        //*in other words, will be true for edges which we have already been to*//
+        boolean[] marked = new boolean[getNumberOfVertices()];
+
+        Queue<Integer> q = new LinkedList<>();
+        q.add(source);
+        marked[source] = true;
+
+        while (!q.isEmpty()) {
+            int v = q.remove();
+
+            for (FlowEdge edge : getAdjacent(v)) {
+                int w = edge.otherEnd(v);
+
+                if (edge.residualCapacity(w) > 0 && !marked[w]) {
+                    edgeTo[w] = edge;
+                    marked[w] = true;
+                    q.add(w);
+                }
+            }
+        }
+
+        return marked[target];
+    }
+
     /**
      * @param v - whose list to get
      * @return - an Array list of type FlowEdge (the list of vertices)
