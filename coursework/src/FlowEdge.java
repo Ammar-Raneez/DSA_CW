@@ -3,14 +3,26 @@
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  */
 
+/*--------------------------------------------------------------------
+ * In Residual Networks
+ * Forward = capacity - flow
+ * Backward = flow
+ *
+ * If you have an edge that are all pointed from to another
+ * Add the delta flows
+ * If there is a backward edge, that flow is deducted from the edge
+ * This is done to maintain local equilibrium, where total incoming
+ * Flow to a vertex must be equal to total outgoing
+ *-----------------------------------------------------------------*/
+
 /**
  * FlowEdge class, which will be used to represent the Edges in the data structure
  * @version 1.x March 6th 2021
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class FlowEdge {
-    private final int vertexFrom; //*Backward (Start Vertex, Pointing from vertex)*//
-    private final int vertexTo;   //*Forward (End Vertex, Pointing towards vertex)*//
+    private final int vertexFrom; //*Backward (Start Vertex, Pointing FROM vertex)*//
+    private final int vertexTo;   //*Forward (End Vertex, Pointing TO wards vertex)*//
     private final int capacity;   //*this edges capacity*//
 
     //*edge flow - will change depending on the augmented path*//
@@ -18,8 +30,8 @@ public class FlowEdge {
 
     /**
      * Initialize a FlowEdge
-     * @param vertexFrom - from vertex v
-     * @param vertexTo - to vertex w
+     * @param vertexFrom - from vertex this
+     * @param vertexTo - to vertex this
      * @param capacity - the capacity this edge can hold
      */
     public FlowEdge(int vertexFrom, int vertexTo, int capacity) {
@@ -54,7 +66,7 @@ public class FlowEdge {
     }
 
     /**
-     * @return this edges flow
+     * @return this edges current flow
      */
     public int getFlow() {
         return this.flow;
@@ -71,10 +83,6 @@ public class FlowEdge {
             return this.vertexFrom;
         } throw new IllegalArgumentException("Illegal Vertex");
     }
-
-    //NOTE - In Residual Networks
-    //Forward = capacity - flow
-    //Backward = flow
 
     /**
      * @param vertex - passed
@@ -93,7 +101,7 @@ public class FlowEdge {
 
     /**
      * Add flow to this edge
-     * @param vertex - if backward vertex, remove flow, else increment
+     * @param vertex - if backward vertex, remove flow, else add
      * @param delta - flow amount
      */
     public void addResidualFlow(int vertex, int delta) {
