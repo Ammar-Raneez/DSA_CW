@@ -3,6 +3,15 @@
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  */
 
+/*
+ * File Information
+ * first line -> #vertices
+ * first line -1 -> sink
+ * 0 -> source
+ * second line onwards -> edges
+ * *each edge line -> vertex from, vertex to, capacity
+ */
+
 /**
  * FlowEdge class, which will be used to represent the Edges in the data structure
  * @version 1.x March 6th 2021

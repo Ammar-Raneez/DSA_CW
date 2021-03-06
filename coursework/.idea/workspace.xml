@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615046283547</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <created>1615047141427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615047141427</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,17 +138,18 @@
     <MESSAGE value="implemented simple Flow Network API, based on input number of vertices" />
     <MESSAGE value="implemented File Parser API, to be able to read and parse the input files" />
     <MESSAGE value="implemented Flow Network API initialization based on input file" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Flow Network API initialization based on input file" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615046108553">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615046108553" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615046281991">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615047138884">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615046281991" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615047138884" />
     <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1615046955323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
