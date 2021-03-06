@@ -74,19 +74,27 @@
       <option name="project" value="LOCAL" />
       <updated>1615037451978</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added validation to FlowEdge API">
+      <created>1615041056344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615041056344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented flow edge API, that will be used as the edges in the flow network" />
     <MESSAGE value="added toString() to FlowEdge API" />
-    <option name="LAST_COMMIT_MESSAGE" value="added toString() to FlowEdge API" />
+    <MESSAGE value="added validation to FlowEdge API" />
+    <option name="LAST_COMMIT_MESSAGE" value="added validation to FlowEdge API" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615037449865">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615041054645">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615037449865" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615041054645" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615024996892">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
