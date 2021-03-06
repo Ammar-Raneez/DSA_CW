@@ -97,6 +97,9 @@ public class FlowEdge {
      * @param delta - flow amount
      */
     public void addResidualFlow(int vertex, int delta) {
+        if (!(delta >= 0)) {
+            throw new IllegalArgumentException("Illegal Delta, please use Non-negative integers");
+        }
         //*backward edge*//
         if (vertex == V) {
             flow -= delta;
@@ -104,7 +107,17 @@ public class FlowEdge {
         //*forward edge*//
         else if (vertex == W) {
             flow += delta;
-        } throw new IllegalArgumentException("Illegal Vertex");
+        }
+        else {
+            throw new IllegalArgumentException("Illegal Vertex");
+        }
+
+        if (!(flow >= 0)) {
+            throw new IllegalArgumentException("Flow must be positive");
+        }
+        if (!(flow <= CAPACITY)) {
+            throw new IllegalArgumentException("Flow must not exceed allowed capacity");
+        }
     }
 
     @Override
