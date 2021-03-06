@@ -91,11 +91,20 @@ public class FlowNetwork {
         adjacencyList.get(w).remove(edge);
     }
 
+    /**
+     * Implements the Breadth First Search Algorithm, which will be used to find the Augmenting Path in Ford Fulkerson
+     * @param source - network source
+     * @param edgeTo - vertex path
+     * @param target - network sink
+     * @return - whether there is another path or not
+     */
     public boolean breadthFirstSearch(int source, FlowEdge[] edgeTo, int target) {
         //*mark an edge as true, if the edge is in the residual network*//
         //*in other words, will be true for edges which we have already been to*//
         boolean[] marked = new boolean[getNumberOfVertices()];
 
+        //*add source to queue, mark it as visited*//
+        //*remove first element of queue (dequeue), get adjacent*//
         Queue<Integer> q = new LinkedList<>();
         q.add(source);
         marked[source] = true;
@@ -105,7 +114,7 @@ public class FlowNetwork {
 
             for (FlowEdge edge : getAdjacent(v)) {
                 int w = edge.otherEnd(v);
-
+                //*add each unvisited neighbor to queue, and mark them as visited, whilst storing their edge in the edgeTo path*//
                 if (edge.residualCapacity(w) > 0 && !marked[w]) {
                     edgeTo[w] = edge;
                     marked[w] = true;
