@@ -13,11 +13,12 @@ import java.util.List;
  */
 public class FlowNetwork {
     //*number of vertices in the Network*//
-    private final int V;
+    private int V;
     //*Adjacency List implementation, will hold the vertices, and each vertex will hold the vertices they have an edge to*//
     private List<ArrayList<FlowEdge>> adjacencyList;
     //*number of edges*//
     private int E;
+
     /**
      * Initialize an empty flow network with V vertices and 0 edges
      * @param V - number of vertices in the network
@@ -28,8 +29,22 @@ public class FlowNetwork {
         }
         this.V = V;
         adjacencyList = new ArrayList<>();
-        for (int v = 0; v<V; v++) {
+        for (int v = 0; v < V; v++) {
             adjacencyList.add(new ArrayList<>());
+        }
+    }
+
+    /**
+     * Initialize flow network based on an input file
+     * @param parser - object of FileParser
+     */
+    public FlowNetwork(FileParser parser) {
+        this.E = parser.getEdges();
+        for (int i = 0; i < E; i++) {
+            int v = parser.getEdgeData().get(i).get(0);
+            int w = parser.getEdgeData().get(i).get(1);
+            int capacity = parser.getEdgeData().get(i).get(2);
+            addEdge(new FlowEdge(v, w, capacity));
         }
     }
 
