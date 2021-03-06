@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ammuuu\Downloads\learning\UNI\Semester II\DSA\coursework\coursework" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileParser" />
+      <module name="coursework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FileParser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -81,20 +102,44 @@
       <option name="project" value="LOCAL" />
       <updated>1615041056344</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented simple Flow Network API, based on input number of vertices">
+      <created>1615041336630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615041336630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented flow edge API, that will be used as the edges in the flow network" />
     <MESSAGE value="added toString() to FlowEdge API" />
     <MESSAGE value="added validation to FlowEdge API" />
-    <option name="LAST_COMMIT_MESSAGE" value="added validation to FlowEdge API" />
+    <MESSAGE value="implemented simple Flow Network API, based on input number of vertices" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented simple Flow Network API, based on input number of vertices" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615041054645">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615045721447">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615041054645" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615045721447" />
+    <state width="1323" height="256" key="GridCell.Tab.0.bottom" timestamp="1615045367677">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="256" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615045367677" />
+    <state width="1323" height="256" key="GridCell.Tab.0.center" timestamp="1615045367677">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="256" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615045367677" />
+    <state width="1323" height="256" key="GridCell.Tab.0.left" timestamp="1615045367677">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="256" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615045367677" />
+    <state width="1323" height="256" key="GridCell.Tab.0.right" timestamp="1615045367677">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="256" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615045367677" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615024996892">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

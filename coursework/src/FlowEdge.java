@@ -9,8 +9,8 @@
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class FlowEdge {
-    private final int V;
-    private final int W;
+    private final int V; //*Backward (Start Vertex, Pointing from vertex)*//
+    private final int W; //*Forward (End Vertex, Pointing towards vertex)*//
     private final int CAPACITY;
 
     //*edge flow - will change depending on the augmented path*//

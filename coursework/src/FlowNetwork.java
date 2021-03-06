@@ -4,6 +4,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * FlowNetwork class, which will be used to represent the Graph Network
@@ -14,7 +15,7 @@ public class FlowNetwork {
     //*number of vertices in the Network*//
     private final int V;
     //*Adjacency List implementation, will hold the vertices, and each vertex will hold the vertices they have an edge to*//
-    private ArrayList<ArrayList<FlowEdge>> adjacencyList;
+    private List<ArrayList<FlowEdge>> adjacencyList;
     //*number of edges*//
     private int E;
     /**
