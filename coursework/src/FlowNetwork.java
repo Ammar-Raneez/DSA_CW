@@ -4,7 +4,9 @@
  */
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * FlowNetwork class, which will be used to represent the Graph Network
@@ -14,9 +16,9 @@ import java.util.List;
 public class FlowNetwork {
     //*number of vertices in the Network*//
     private int vertices;
-    //*Adjacency List implementation, will hold the vertices, and each vertex will hold the vertices they have an edge to*//
+    //*Adjacency List implementation, will hold the vertices, and each vertex will hold the edges that are incident to it*//
     private List<ArrayList<FlowEdge>> adjacencyList;
-    //*number of edges*//
+    //*number of edges in the Network*//
     private int edges;
 
     /**
@@ -36,17 +38,20 @@ public class FlowNetwork {
 
     /**
      * Initialize flow network based on an input file
+     * Since the FileParser is tailored specifically for an expected format
+     * The values are directly obtained from the parser
      * @param parser - object of FileParser
      */
     public FlowNetwork(FileParser parser) {
         //*call previous constructor to initialize*//
         this(parser.getVerticesTotal());
 
+        //*Number of edges & vertices are defined in the data file itself, as specified*//
         this.edges = parser.getEdgesTotal();
-        int x = this.edges;
         this.vertices = parser.getVerticesTotal();
 
-        for (int i = 0; i < x; i++) {
+        //*Add all the read edges into the Network*//
+        for (int i = 0; i < this.edges; i++) {
             int v = parser.getEdgeData().get(i).get(0);
             int w = parser.getEdgeData().get(i).get(1);
             int capacity = parser.getEdgeData().get(i).get(2);
@@ -65,21 +70,32 @@ public class FlowNetwork {
         //*must be in between 0 and V*//
         validVertex(v);
         validVertex(w);
-        //*at the obtained vertices, add the edge, in the adjacency list*//
+        //*at the obtained vertices, add the edge, into their adjacency lists*//
         adjacencyList.get(v).add(edge);
         adjacencyList.get(w).add(edge);
-        edges++;
     }
 
+    /**
+     * Delete an edge from the network
+     * @param edge - edge to delete
+     */
     public void deleteEdge(FlowEdge edge) {
+        int v = edge.from();
+        int w = edge.to();
 
+        validVertex(v);
+        validVertex(w);
+
+        //*removing v from w's adjacency list, and vice versa*//
+        adjacencyList.get(v).remove(edge);
+        adjacencyList.get(w).remove(edge);
     }
 
     /**
      * @param v - whose list to get
-     * @return - an iterable of type FlowEdge (the list of vertices)
+     * @return - an Array list of type FlowEdge (the list of vertices)
      */
-    public Iterable<FlowEdge> adjacent(int v) {
+    public ArrayList<FlowEdge> getAdjacent(int v) {
         validVertex(v);
         return adjacencyList.get(v);
     }
