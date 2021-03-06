@@ -27,9 +27,12 @@ public class FordFulkerson {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
 
+        //*Ford Fulkerson Algorithm*//
         while (hasAugmentingPath(flowNetwork, source, target)) {
+            //*the maximum flow that can be pushed at a time*//
             double bottleneckCapacity = Integer.MAX_VALUE;
 
+            //*TODO Comment n understand*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
                 bottleneckCapacity = Math.min(bottleneckCapacity, edgeTo[v].residualCapacity(v));
             }

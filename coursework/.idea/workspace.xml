@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FordFulkerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FordFulkerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615060142811</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commented FlowNetwork BFS API">
+      <created>1615060435249</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615060435249</updated>
+    </task>
+    <task id="LOCAL-00018" summary="moved main() to dedicated class">
+      <created>1615060625976</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615060625976</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,17 +233,19 @@
     <MESSAGE value="commented FlowEdge API" />
     <MESSAGE value="added delete operation into FlowNetwork" />
     <MESSAGE value="added DFS operation into FlowNetwork" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DFS operation into FlowNetwork" />
+    <MESSAGE value="commented FlowNetwork BFS API" />
+    <MESSAGE value="moved main() to dedicated class" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved main() to dedicated class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615047828206">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615047828206" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615060433163">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615060622991">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615060433163" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615060622991" />
     <state width="1323" height="330" key="GridCell.Tab.0.bottom" timestamp="1615060033764">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
