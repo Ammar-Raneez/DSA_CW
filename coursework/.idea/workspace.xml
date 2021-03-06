@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Ammuuu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +59,25 @@
       <option name="presentableId" value="Default" />
       <updated>1615024945665</updated>
     </task>
+    <task id="LOCAL-00001" summary="implemented flow edge API, that will be used as the edges in the flow network">
+      <created>1615037255674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615037255674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented flow edge API, that will be used as the edges in the flow network" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented flow edge API, that will be used as the edges in the flow network" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615037220436">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615037252260">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615037220436" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615037252260" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615024996892">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

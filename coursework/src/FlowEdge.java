@@ -106,4 +106,9 @@ public class FlowEdge {
             flow += delta;
         } throw new IllegalArgumentException("Illegal Vertex");
     }
+
+    @Override
+    public String toString() {
+        return V + "->" + W + " | Flow: " + flow + " | Capacity: " + CAPACITY;
+    }
 }
