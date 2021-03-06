@@ -1,11 +1,28 @@
+/*
+ * FordFulkerson API
+ * Copyright © 2021 Ammar Raneez. All Rights Reserved.
+ */
+
 import java.io.FileNotFoundException;
 
+/**
+ * FordFulkerson class, which will be used to implement the FordFulkerson Algorithm
+ * @version 1.x March 6th 2021
+ * @author Ammar Raneez | 2019163 | W1761196
+ */
 public class FordFulkerson {
     //*will hold the path, on how we reach each vertex*//
     private FlowEdge[] edgeTo;
-    //*value of the flow*//
+    //*value of the max flow*//
     private int flowValue;
 
+    /**
+     * Initialize
+     * @param flowNetwork - the FlowNetwork to perform on
+     * @param source - networks source
+     * @param target - networks target
+     * @throws InterruptedException - thrown on Thread sleep()
+     */
     public FordFulkerson(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
@@ -30,19 +47,21 @@ public class FordFulkerson {
         }
     }
 
+    /**
+     * @param flowNetwork - which flow network
+     * @param source - network source
+     * @param target - network target
+     * @return whether there's an augmenting path
+     */
     private boolean hasAugmentingPath(FlowNetwork flowNetwork, int source, int target) {
         edgeTo = new FlowEdge[flowNetwork.getNumberOfVertices()];
         return flowNetwork.breadthFirstSearch(source, edgeTo, target);
     }
 
+    /**
+     * @return graphs max flow
+     */
     public int getFlowValue() {
         return flowValue;
-    }
-
-    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
-        FileParser parser = new FileParser("testData.txt");
-        FlowNetwork flowNetwork = new FlowNetwork(parser);
-        FordFulkerson fordFulkerson = new FordFulkerson(flowNetwork, parser.getSource(), parser.getSink());
-        System.out.println("Max Flow determined: " + fordFulkerson.getFlowValue());
     }
 }
