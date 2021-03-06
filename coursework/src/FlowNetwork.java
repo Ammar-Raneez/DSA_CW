@@ -51,7 +51,7 @@ public class FlowNetwork {
 
     /**
      * Add an edge to the network
-     * @param edge - add to be added
+     * @param edge - edge to be added
      */
     public void addEdge(FlowEdge edge) {
         //*Get the edges forward and backward vertex*//
