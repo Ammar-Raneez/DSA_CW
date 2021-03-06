@@ -10,6 +10,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+
+/*------------------------------------------------------------
+ * File Information
+ * first line -> #vertices
+ * first line -1 -> sink
+ * 0 -> source
+ * second line onwards -> edges
+ * each edge line -> vertex from, vertex to, capacity
+ *-------------------------------------------------------------*/
+
 /**
  * FileParser class, which will be used to read in the input and parse it into a way that the FlowNetwork can accept
  * @version 1.x March 6th 2021
@@ -75,7 +85,7 @@ public class FileParser {
 
     /**
      * Will handle the parsing of data
-     * Loop through all lines, first value = v, second value = w, third value = edge capacity
+     * Loop and split at " ", due to each item in a line being separated by " "
      */
     private void parseAndSetEdges() {
         while (this.SCANNER.hasNext()) {
@@ -89,14 +99,14 @@ public class FileParser {
     }
 
     /**
-     * source is always 0
+     * Set source. Source is always 0
      */
     private void setSource() {
         this.source = 0;
     }
 
     /**
-     * First line has the vertex count
+     * Set vertex count and sink, First line has the vertex count
      */
     private void setVertexAndSink() {
         this.vertices = Integer.parseInt(this.SCANNER.nextLine());
