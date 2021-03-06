@@ -22,6 +22,7 @@ public class FileParser {
     //*store a list of array lists, where each will hold specific edge data, such that it can be provided to the graph*//
     private List<ArrayList<Integer>> edgeData;
     private int edges;
+    private int vertices;
 
     /**
      * Constructor to initialize the fields
@@ -32,7 +33,7 @@ public class FileParser {
         FileReader FILE_READER = new FileReader(file);
         this.SCANNER = new Scanner(FILE_READER);
         this.edgeData = new ArrayList<>();
-        this.setSink();
+        this.setVertexAndSink();
         this.setSource();
         this.parseAndSetEdges();
     }
@@ -47,7 +48,7 @@ public class FileParser {
     /**
      * @return total edges in the specified file
      */
-    public int getEdges() {
+    public int getEdgesTotal() {
         return this.edges;
     }
 
@@ -63,6 +64,13 @@ public class FileParser {
      */
     public int getSink() {
         return this.sink;
+    }
+
+    /**
+     * @return total number of vertices
+     */
+    public int getVerticesTotal() {
+        return this.vertices;
     }
 
     /**
@@ -88,15 +96,22 @@ public class FileParser {
     }
 
     /**
-     * First line has the sink value
+     * First line has the vertex count
      */
-    private void setSink() {
-        this.sink = Integer.parseInt(this.SCANNER.nextLine());
+    private void setVertexAndSink() {
+        this.vertices = Integer.parseInt(this.SCANNER.nextLine());
+        this.sink = this.vertices - 1;
+    }
+
+    @Override
+    public String toString() {
+        return "Edges: " + getEdgesTotal() + " " + " Vertices: " + getVerticesTotal() + " Sink: " + getSink()
+                + " Source: " + getSource();
     }
 
     public static void main(String[] args) throws FileNotFoundException {
         FileParser parser = new FileParser("testData.txt");
         System.out.println(parser.getEdgeData());
-        System.out.println(parser.getEdges() + " " + parser.getSink() + " " + parser.getSource());
+        System.out.println(parser);
     }
 }

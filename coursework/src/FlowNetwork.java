@@ -13,11 +13,11 @@ import java.util.List;
  */
 public class FlowNetwork {
     //*number of vertices in the Network*//
-    private int V;
+    private int vertices;
     //*Adjacency List implementation, will hold the vertices, and each vertex will hold the vertices they have an edge to*//
     private List<ArrayList<FlowEdge>> adjacencyList;
     //*number of edges*//
-    private int E;
+    private int edges;
 
     /**
      * Initialize an empty flow network with V vertices and 0 edges
@@ -27,7 +27,7 @@ public class FlowNetwork {
         if (V < 0) {
             throw new IllegalArgumentException("Negative Vertices not allowed");
         }
-        this.V = V;
+        this.vertices = V;
         adjacencyList = new ArrayList<>();
         for (int v = 0; v < V; v++) {
             adjacencyList.add(new ArrayList<>());
@@ -39,8 +39,9 @@ public class FlowNetwork {
      * @param parser - object of FileParser
      */
     public FlowNetwork(FileParser parser) {
-        this.E = parser.getEdges();
-        for (int i = 0; i < E; i++) {
+        this.edges = parser.getEdgesTotal();
+        this.vertices = parser.getVerticesTotal();
+        for (int i = 0; i < edges; i++) {
             int v = parser.getEdgeData().get(i).get(0);
             int w = parser.getEdgeData().get(i).get(1);
             int capacity = parser.getEdgeData().get(i).get(2);
@@ -62,7 +63,7 @@ public class FlowNetwork {
         //*at the obtained vertices, add the edge, in the adjacency list*//
         adjacencyList.get(v).add(edge);
         adjacencyList.get(w).add(edge);
-        E++;
+        edges++;
     }
 
     /**
@@ -78,14 +79,14 @@ public class FlowNetwork {
      * @return number of vertices
      */
     public int V() {
-        return this.V;
+        return this.vertices;
     }
 
     /**
      * @return number of edges
      */
     public int E() {
-        return this.E;
+        return this.edges;
     }
 
     /**
@@ -93,8 +94,8 @@ public class FlowNetwork {
      * @param v - which vertex to validate
      */
     private void validVertex(int v) {
-        if (v < 0 || v > V) {
-            throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + V + " and greater than 0");
+        if (v < 0 || v > vertices) {
+            throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + vertices + " and greater than 0");
         }
     }
 }
