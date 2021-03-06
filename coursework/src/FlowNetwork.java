@@ -71,6 +71,10 @@ public class FlowNetwork {
         edges++;
     }
 
+    public void deleteEdge(FlowEdge edge) {
+
+    }
+
     /**
      * @param v - whose list to get
      * @return - an iterable of type FlowEdge (the list of vertices)

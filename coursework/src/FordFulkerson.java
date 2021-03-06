@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -8,7 +9,7 @@ public class FordFulkerson {
     //*value of the flow*//
     private int flowValue;
 
-    public FordFulkerson(FlowNetwork flowNetwork, int source, int target) {
+    public FordFulkerson(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
 
@@ -23,7 +24,12 @@ public class FordFulkerson {
                 edgeTo[v].addResidualFlow(v, (int) bottleneckCapacity);
             }
 
+            System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
+            System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
             flowValue += bottleneckCapacity;
+            System.out.println(flowValue);
+            System.out.println("Through path: \n");
+            Thread.sleep(1000);
         }
     }
 
@@ -59,10 +65,10 @@ public class FordFulkerson {
         return flowValue;
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         FileParser parser = new FileParser("testData.txt");
         FlowNetwork flowNetwork = new FlowNetwork(parser);
         FordFulkerson fordFulkerson = new FordFulkerson(flowNetwork, parser.getSource(), parser.getSink());
-        System.out.println(fordFulkerson.getFlowValue());
+        System.out.println("Max Flow determined: " + fordFulkerson.getFlowValue());
     }
 }
