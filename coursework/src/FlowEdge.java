@@ -10,8 +10,8 @@
  */
 public class FlowEdge {
     private final int vertexFrom; //*Backward (Start Vertex, Pointing from vertex)*//
-    private final int vertexTo; //*Forward (End Vertex, Pointing towards vertex)*//
-    private final int capacity;
+    private final int vertexTo;   //*Forward (End Vertex, Pointing towards vertex)*//
+    private final int capacity;   //*this edges capacity*//
 
     //*edge flow - will change depending on the augmented path*//
     private int flow;

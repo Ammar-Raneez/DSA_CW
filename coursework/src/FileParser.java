@@ -27,15 +27,19 @@ import java.util.Scanner;
  */
 public class FileParser {
     private final Scanner SCANNER;
+    //*source of Network*//
     private int source;
+    //*target of Network*//
     private int sink;
     //*store a list of array lists, where each will hold specific edge data, such that it can be provided to the graph*//
     private List<ArrayList<Integer>> edgeData;
+    //*Number of edges*//
     private int edges;
+    //*Number of vertices*//
     private int vertices;
 
     /**
-     * Constructor to initialize the fields
+     * Constructor to initialize and determine
      * @param file - which file to read
      * @throws FileNotFoundException - thrown if specified file cannot be found
      */
@@ -86,6 +90,7 @@ public class FileParser {
     /**
      * Will handle the parsing of data
      * Loop and split at " ", due to each item in a line being separated by " "
+     * Parse the data into an Integer before assignment, since files hold String data
      */
     private void parseAndSetEdges() {
         while (this.SCANNER.hasNext()) {
@@ -93,6 +98,7 @@ public class FileParser {
             int v = Integer.parseInt(eachLine[0]);
             int w = Integer.parseInt(eachLine[1]);
             int capacity = Integer.parseInt(eachLine[2]);
+            //*store each edge data separately at index v*//
             this.edgeData.add(new ArrayList<>(Arrays.asList(v, w, capacity)));
             this.edges++;
         }
@@ -106,7 +112,7 @@ public class FileParser {
     }
 
     /**
-     * Set vertex count and sink, First line has the vertex count
+     * Set vertex count and sink, First line has the vertex count. Sink = vertices - 1
      */
     private void setVertexAndSink() {
         this.vertices = Integer.parseInt(this.SCANNER.nextLine());
@@ -119,6 +125,11 @@ public class FileParser {
                 + " Source: " + getSource();
     }
 
+    /**
+     * Class Tester
+     * @param args - command line arguments
+     * @throws FileNotFoundException - thrown upon invalid file path
+     */
     public static void main(String[] args) throws FileNotFoundException {
         FileParser parser = new FileParser("testData.txt");
         System.out.println(parser.getEdgeData());
