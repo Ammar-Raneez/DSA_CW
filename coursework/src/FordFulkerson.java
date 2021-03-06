@@ -3,8 +3,6 @@
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  */
 
-import java.io.FileNotFoundException;
-
 /**
  * FordFulkerson class, which will be used to implement the FordFulkerson Algorithm
  * @version 1.x March 6th 2021
