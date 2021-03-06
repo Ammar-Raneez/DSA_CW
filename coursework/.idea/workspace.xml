@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FordFulkerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Ammuuu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Ammuuu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
       <recent name="C:\Users\Ammuuu\Downloads\learning\UNI\Semester II\DSA\coursework\coursework" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FordFulkerson">
     <configuration name="FileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FileParser" />
       <module name="coursework" />
@@ -51,8 +52,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FordFulkerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FordFulkerson" />
+      <module name="coursework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FordFulkerson" />
         <item itemvalue="Application.FileParser" />
       </list>
     </recent_temporary>
@@ -143,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615047859668</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="code styles">
+      <created>1615048355252</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615048355252</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -156,33 +172,34 @@
     <MESSAGE value="." />
     <MESSAGE value="added file information in FileParser API" />
     <MESSAGE value="more meaningful variable names" />
-    <option name="LAST_COMMIT_MESSAGE" value="more meaningful variable names" />
+    <MESSAGE value="code styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="code styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615047828206">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615047828206" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615047857887">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615048353630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615047857887" />
-    <state width="1323" height="21" key="GridCell.Tab.0.bottom" timestamp="1615047288906">
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615048353630" />
+    <state width="1323" height="294" key="GridCell.Tab.0.bottom" timestamp="1615053206225">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="21" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615047288906" />
-    <state width="1323" height="21" key="GridCell.Tab.0.center" timestamp="1615047288905">
+    <state width="1323" height="294" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615053206225" />
+    <state width="1323" height="294" key="GridCell.Tab.0.center" timestamp="1615053206225">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="21" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615047288905" />
-    <state width="1323" height="21" key="GridCell.Tab.0.left" timestamp="1615047288904">
+    <state width="1323" height="294" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615053206225" />
+    <state width="1323" height="294" key="GridCell.Tab.0.left" timestamp="1615053206225">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="21" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615047288904" />
-    <state width="1323" height="21" key="GridCell.Tab.0.right" timestamp="1615047288905">
+    <state width="1323" height="294" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615053206225" />
+    <state width="1323" height="294" key="GridCell.Tab.0.right" timestamp="1615053206225">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="21" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615047288905" />
+    <state width="1323" height="294" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615053206225" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615024996892">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

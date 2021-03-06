@@ -39,9 +39,14 @@ public class FlowNetwork {
      * @param parser - object of FileParser
      */
     public FlowNetwork(FileParser parser) {
+        //*call previous constructor to initialize*//
+        this(parser.getVerticesTotal());
+
         this.edges = parser.getEdgesTotal();
+        int x = this.edges;
         this.vertices = parser.getVerticesTotal();
-        for (int i = 0; i < edges; i++) {
+
+        for (int i = 0; i < x; i++) {
             int v = parser.getEdgeData().get(i).get(0);
             int w = parser.getEdgeData().get(i).get(1);
             int capacity = parser.getEdgeData().get(i).get(2);
@@ -68,7 +73,7 @@ public class FlowNetwork {
 
     /**
      * @param v - whose list to get
-     * @return - iterator (the list of vertices)
+     * @return - an iterable of type FlowEdge (the list of vertices)
      */
     public Iterable<FlowEdge> adjacent(int v) {
         validVertex(v);
@@ -78,14 +83,14 @@ public class FlowNetwork {
     /**
      * @return number of vertices
      */
-    public int V() {
+    public int getNumberOfVertices() {
         return this.vertices;
     }
 
     /**
      * @return number of edges
      */
-    public int E() {
+    public int getNumberOfEdges() {
         return this.edges;
     }
 
