@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Indicative coursework specification.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Indicative coursework specification.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FordFulkerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FordFulkerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615060859570</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="moved print statement to dedicated private method">
+      <created>1615091048460</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1615091048460</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,33 +267,34 @@
     <MESSAGE value="moved main() to dedicated class" />
     <MESSAGE value="added TODO comments, to be continued" />
     <MESSAGE value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
-    <option name="LAST_COMMIT_MESSAGE" value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
+    <MESSAGE value="moved print statement to dedicated private method" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved print statement to dedicated private method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615047828206">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615047828206" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615060857163">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615091045615">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615060857163" />
-    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1615090705133">
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615091045615" />
+    <state width="1323" height="127" key="GridCell.Tab.0.bottom" timestamp="1615094216643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615090705133" />
-    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1615090705133">
+    <state width="1323" height="127" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615094216643" />
+    <state width="1323" height="127" key="GridCell.Tab.0.center" timestamp="1615094216643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615090705133" />
-    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1615090705133">
+    <state width="1323" height="127" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615094216643" />
+    <state width="1323" height="127" key="GridCell.Tab.0.left" timestamp="1615094216643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615090705133" />
-    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1615090705133">
+    <state width="1323" height="127" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615094216643" />
+    <state width="1323" height="127" key="GridCell.Tab.0.right" timestamp="1615094216643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615090705133" />
+    <state width="1323" height="127" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615094216643" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615089515168">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

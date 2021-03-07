@@ -47,7 +47,8 @@ public class FileParser {
         FileReader FILE_READER = new FileReader(file);
         this.SCANNER = new Scanner(FILE_READER);
         this.edgeData = new ArrayList<>();
-        this.setVertexAndSink();
+        this.setVertex();
+        this.setSink();
         this.setSource();
         this.parseAndSetEdges();
     }
@@ -112,11 +113,17 @@ public class FileParser {
     }
 
     /**
-     * Set vertex count and sink, First line has the vertex count. Sink = vertices - 1
+     * Set Sink. Sink = #Vertices - 1
      */
-    private void setVertexAndSink() {
-        this.vertices = Integer.parseInt(this.SCANNER.nextLine());
+    private void setSink() {
         this.sink = this.vertices - 1;
+    }
+
+    /**
+     * Set vertex count. First line has the vertex count
+     */
+    private void setVertex() {
+        this.vertices = Integer.parseInt(this.SCANNER.nextLine());
     }
 
     @Override
