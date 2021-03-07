@@ -44,7 +44,7 @@ public class EdmondsCarp {
             }
 
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
-                edgeTo[v].addResidualFlow(v, (int) bottleneckCapacity);
+                edgeTo[v].addResidualFlow(v, bottleneckCapacity);
             }
 
             augmentingPaths++;
