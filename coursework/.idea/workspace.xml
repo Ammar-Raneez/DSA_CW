@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615095105798</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added support comments in EdmondsCarp API">
+      <created>1615103987562</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1615103987562</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,33 +299,34 @@
     <MESSAGE value="separated method concerns in FileParser API" />
     <MESSAGE value="changed FordFulkerson.java to EdmondsCarp.java" />
     <MESSAGE value="removed unneeded cast in EdmondsCarp.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unneeded cast in EdmondsCarp.java" />
+    <MESSAGE value="added support comments in EdmondsCarp API" />
+    <option name="LAST_COMMIT_MESSAGE" value="added support comments in EdmondsCarp API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615094879713">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615094879713" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615095104993">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615103985194">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615095104993" />
-    <state width="1323" height="146" key="GridCell.Tab.0.bottom" timestamp="1615103857675">
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615103985194" />
+    <state width="1323" height="155" key="GridCell.Tab.0.bottom" timestamp="1615106565099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615103857675" />
-    <state width="1323" height="146" key="GridCell.Tab.0.center" timestamp="1615103857674">
+    <state width="1323" height="155" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615106565099" />
+    <state width="1323" height="155" key="GridCell.Tab.0.center" timestamp="1615106565098">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615103857674" />
-    <state width="1323" height="146" key="GridCell.Tab.0.left" timestamp="1615103857673">
+    <state width="1323" height="155" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615106565098" />
+    <state width="1323" height="155" key="GridCell.Tab.0.left" timestamp="1615106565098">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615103857673" />
-    <state width="1323" height="146" key="GridCell.Tab.0.right" timestamp="1615103857674">
+    <state width="1323" height="155" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615106565098" />
+    <state width="1323" height="155" key="GridCell.Tab.0.right" timestamp="1615106565099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615103857674" />
+    <state width="1323" height="155" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615106565099" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615089515168">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

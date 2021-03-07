@@ -103,8 +103,12 @@ public class FlowNetwork {
         //*in other words, will be true for edges which we have already been to*//
         boolean[] marked = new boolean[getNumberOfVertices()];
 
-        //*add vertex to queue, mark it as visited*//
-        //*remove first element of queue (dequeue), get adjacent, do first again*//
+         /*---------------------------------------------------------------------
+         * Put source onto queue, mark source as visited
+         * Repeat until Queue is Empty:
+         *      Remove vertex v from queue, least recently added one
+         *      Add to queue all unmarked vertices adjacent to v and mark them
+         * -------------------------------------------------------------------*/
         Queue<Integer> q = new LinkedList<>();
         q.add(source);
         marked[source] = true;
