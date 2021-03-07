@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FordFulkerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +44,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="FileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileParser" />
+    <configuration name="EdmondsCarp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EdmondsCarp" />
       <module name="coursework" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FordFulkerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FordFulkerson" />
+    <configuration name="FileParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileParser" />
       <module name="coursework" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,7 +68,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.FordFulkerson" />
+        <item itemvalue="Application.EdmondsCarp" />
         <item itemvalue="Application.FileParser" />
       </list>
     </recent_temporary>
@@ -243,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615091048460</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="separated method concerns in FileParser API">
+      <created>1615094237290</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615094237290</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -268,17 +275,18 @@
     <MESSAGE value="added TODO comments, to be continued" />
     <MESSAGE value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
     <MESSAGE value="moved print statement to dedicated private method" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved print statement to dedicated private method" />
+    <MESSAGE value="separated method concerns in FileParser API" />
+    <option name="LAST_COMMIT_MESSAGE" value="separated method concerns in FileParser API" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615047828206">
+    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615094879713">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615047828206" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615091045615">
+    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615094879713" />
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615094236259">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615091045615" />
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615094236259" />
     <state width="1323" height="127" key="GridCell.Tab.0.bottom" timestamp="1615094216643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

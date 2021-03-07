@@ -1,14 +1,18 @@
 /*
- * FordFulkerson API
+ * EdmondsCarp API
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  */
 
+/*------------------------------------------------------------------------------------------
+ * Edmonds Carp is an Algorithm that implements Ford Fulkerson, using Breadth First Search
+ *-----------------------------------------------------------------------------------------*/
+
 /**
- * FordFulkerson class, which will be used to implement the FordFulkerson Algorithm
+ * EdmondsCarp class, which will be used to implement the FordFulkerson Algorithm
  * @version 1.x March 6th 2021
  * @author Ammar Raneez | 2019163 | W1761196
  */
-public class FordFulkerson {
+public class EdmondsCarp {
     //*will hold the path, on how we reach each vertex*//
     private FlowEdge[] edgeTo;
     //*value of the max flow*//
@@ -21,7 +25,7 @@ public class FordFulkerson {
      * @param target - networks target
      * @throws InterruptedException - thrown on Thread sleep() of printDetails()
      */
-    public FordFulkerson(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
+    public EdmondsCarp(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
         int augmentingPaths = 0;
