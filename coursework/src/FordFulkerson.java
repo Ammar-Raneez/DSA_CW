@@ -19,16 +19,20 @@ public class FordFulkerson {
      * @param flowNetwork - the FlowNetwork to perform on
      * @param source - networks source
      * @param target - networks target
-     * @throws InterruptedException - thrown on Thread sleep()
+     * @throws InterruptedException - thrown on Thread sleep() of printDetails()
      */
     public FordFulkerson(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
+        int augmentingPaths = 0;
+
+        System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices());
 
         //*Ford Fulkerson Algorithm*//
         while (hasAugmentingPath(flowNetwork, source, target)) {
-            //*the maximum flow that can be pushed at a time*//
-            double bottleneckCapacity = Integer.MAX_VALUE;
+            //*the maximum flow that can be pushed at a time, initialized to infinity, if it was initialized as 0*//
+            //*always and only zero will be flown*//
+            int bottleneckCapacity = Integer.MAX_VALUE;
 
             //*TODO Comment n understand*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
@@ -39,13 +43,25 @@ public class FordFulkerson {
                 edgeTo[v].addResidualFlow(v, (int) bottleneckCapacity);
             }
 
-            System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
-            System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
-            flowValue += bottleneckCapacity;
-            System.out.println(flowValue);
-            System.out.println("Through path: \n");
-            Thread.sleep(1000);
+            augmentingPaths++;
+            printDetails(bottleneckCapacity, augmentingPaths);
         }
+    }
+
+    /**
+     * Print some details about each iteration
+     * @param bottleneckCapacity - amount of flow for an iteration
+     * @param augmentingPaths - current number of augmenting path
+     * @throws InterruptedException - thrown in Thread sleep()
+     */
+    private void printDetails(int bottleneckCapacity, int augmentingPaths) throws InterruptedException {
+        System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
+        System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
+        flowValue += bottleneckCapacity;
+        System.out.println(flowValue);
+        System.out.println("Augmenting Path: " + augmentingPaths);
+        Thread.sleep(1000);
+        System.out.println();
     }
 
     /**
