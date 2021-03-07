@@ -38,11 +38,13 @@ public class EdmondsCarp {
             //*always and only zero will be flown*//
             int bottleneckCapacity = Integer.MAX_VALUE;
 
-            //*TODO Comment n understand*//
+            //*determine bottleneck capacity, to increment the flow value*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
                 bottleneckCapacity = Math.min(bottleneckCapacity, edgeTo[v].residualCapacity(v));
             }
 
+            //*add bottleneck capacity to the edges that were involved, to signify the change in flow of the edge*//
+            //*the max forward edge can hold is it's capacity, and a backward edge can hold a minimum of 0 - empty*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
                 edgeTo[v].addResidualFlow(v, bottleneckCapacity);
             }
