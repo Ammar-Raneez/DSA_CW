@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,11 +276,17 @@
       <option name="project" value="LOCAL" />
       <updated>1615106631681</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added support print statements in EdmondsCarp API">
+      <created>1615106941318</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1615106941318</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added toString() to FlowEdge API" />
     <MESSAGE value="added validation to FlowEdge API" />
     <MESSAGE value="implemented simple Flow Network API, based on input number of vertices" />
     <MESSAGE value="implemented File Parser API, to be able to read and parse the input files" />
@@ -306,33 +311,34 @@
     <MESSAGE value="removed unneeded cast in EdmondsCarp.java" />
     <MESSAGE value="added support comments in EdmondsCarp API" />
     <MESSAGE value="added algorithm support comment in FlowNetwork API" />
-    <option name="LAST_COMMIT_MESSAGE" value="added algorithm support comment in FlowNetwork API" />
+    <MESSAGE value="added support print statements in EdmondsCarp API" />
+    <option name="LAST_COMMIT_MESSAGE" value="added support print statements in EdmondsCarp API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615094879713">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615094879713" />
-    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615106630056">
+    <state x="384" y="0" key="CommitChangelistDialog2" timestamp="1615106939328">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615106630056" />
-    <state width="1323" height="273" key="GridCell.Tab.0.bottom" timestamp="1615106873250">
+    <state x="384" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615106939328" />
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1615116412213">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="273" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615106873250" />
-    <state width="1323" height="273" key="GridCell.Tab.0.center" timestamp="1615106873250">
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615116412213" />
+    <state width="1323" height="149" key="GridCell.Tab.0.center" timestamp="1615116412213">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="273" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615106873250" />
-    <state width="1323" height="273" key="GridCell.Tab.0.left" timestamp="1615106873250">
+    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615116412213" />
+    <state width="1323" height="149" key="GridCell.Tab.0.left" timestamp="1615116412213">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="273" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615106873250" />
-    <state width="1323" height="273" key="GridCell.Tab.0.right" timestamp="1615106873250">
+    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615116412213" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right" timestamp="1615116412213">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="273" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615106873250" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615116412213" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615089515168">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
