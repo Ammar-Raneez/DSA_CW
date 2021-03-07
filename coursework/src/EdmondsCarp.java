@@ -30,13 +30,15 @@ public class EdmondsCarp {
         this.flowValue = 0;
         int augmentingPaths = 0;
 
-        System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices());
+        System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices() + "\n\n");
 
         //*Ford Fulkerson Algorithm*//
         while (hasAugmentingPath(flowNetwork, source, target)) {
             //*the maximum flow that can be pushed at a time, initialized to infinity, if it was initialized as 0*//
             //*always and only zero will be flown*//
             int bottleneckCapacity = Integer.MAX_VALUE;
+
+            //*The for loops are designed in a way to "re track" the path taken, in other words, it goes backwards*//
 
             //*determine bottleneck capacity, to increment the flow value*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
@@ -46,7 +48,9 @@ public class EdmondsCarp {
             //*add bottleneck capacity to the edges that were involved, to signify the change in flow of the edge*//
             //*the max forward edge can hold is it's capacity, and a backward edge can hold a minimum of 0 - empty*//
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
+                System.out.print("Before Adding Residual Flow: " + edgeTo[v] + " || ");
                 edgeTo[v].addResidualFlow(v, bottleneckCapacity);
+                System.out.println("After Adding Residual Flow: " + edgeTo[v]);
             }
 
             augmentingPaths++;
@@ -61,11 +65,11 @@ public class EdmondsCarp {
      * @throws InterruptedException - thrown in Thread sleep()
      */
     private void printDetails(int bottleneckCapacity, int augmentingPaths) throws InterruptedException {
+        System.out.println("Augmenting Path: " + augmentingPaths);
         System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
         System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
         flowValue += bottleneckCapacity;
         System.out.println(flowValue);
-        System.out.println("Augmenting Path: " + augmentingPaths);
         Thread.sleep(1000);
         System.out.println();
     }

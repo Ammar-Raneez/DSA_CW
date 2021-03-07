@@ -130,6 +130,6 @@ public class FlowEdge {
 
     @Override
     public String toString() {
-        return vertexFrom + "->" + vertexTo + " | Flow: " + flow + " | Capacity: " + capacity;
+        return "Flow Edge: " + vertexFrom + "->" + vertexTo + ", Flow: " + flow + ", Capacity: " + capacity;
     }
 }
