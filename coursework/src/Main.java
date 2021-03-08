@@ -14,16 +14,21 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         FileParser parser = null;
         try {
-            parser = new FileParser("test files/example.txt");
+            parser = new FileParser("test files/bridge_9.txt");
         } catch (FileNotFoundException fe) {
             System.out.println("[ERROR] --> File could not be found!");
         }
 
         if (parser != null) {
             System.out.println(parser.getEdgesTotal());
-//            FlowNetwork flowNetwork = new FlowNetwork(parser);
-//            EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
-//            System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+            FlowNetwork flowNetwork = new FlowNetwork(parser);
+
+            //*Performance Analysis*//
+            double startTime = System.currentTimeMillis() / 1000.0;
+            EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+            double endTime = System.currentTimeMillis() / 1000.0;
+            System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+            System.out.println("Time Taken: " + (endTime - startTime));
         }
     }
 }

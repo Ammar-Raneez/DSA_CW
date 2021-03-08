@@ -70,7 +70,7 @@ public class EdmondsCarp {
         System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
         flowValue += bottleneckCapacity;
         System.out.println(flowValue);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);   //*simulate time taken --> remove when measuring performance*//
         System.out.println();
     }
 
