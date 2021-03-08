@@ -95,7 +95,7 @@ public class FileParser {
      */
     private void parseAndSetEdges() {
         while (this.SCANNER.hasNext()) {
-            String[] eachLine = this.SCANNER.nextLine().split(" ");
+            String[] eachLine = this.SCANNER.nextLine().trim().split(" ");
             int v = Integer.parseInt(eachLine[0]);
             int w = Integer.parseInt(eachLine[1]);
             int capacity = Integer.parseInt(eachLine[2]);
@@ -123,23 +123,12 @@ public class FileParser {
      * Set vertex count. First line has the vertex count
      */
     private void setVertex() {
-        this.vertices = Integer.parseInt(this.SCANNER.nextLine());
+        this.vertices = Integer.parseInt(this.SCANNER.nextLine().trim());
     }
 
     @Override
     public String toString() {
         return "Edges: " + getEdgesTotal() + " " + " Vertices: " + getVerticesTotal() + " Sink: " + getSink()
                 + " Source: " + getSource();
-    }
-
-    /**
-     * Class Tester
-     * @param args - command line arguments
-     * @throws FileNotFoundException - thrown upon invalid file path
-     */
-    public static void main(String[] args) throws FileNotFoundException {
-        FileParser parser = new FileParser("testData.txt");
-        System.out.println(parser.getEdgeData());
-        System.out.println(parser);
     }
 }

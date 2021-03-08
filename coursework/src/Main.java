@@ -11,11 +11,19 @@ import java.io.FileNotFoundException;
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
-        FileParser parser = new FileParser("testData.txt");
-        System.out.println(parser.getEdgesTotal());
-//        FlowNetwork flowNetwork = new FlowNetwork(parser);
-//        EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
-//        System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+    public static void main(String[] args) throws InterruptedException {
+        FileParser parser = null;
+        try {
+            parser = new FileParser("test files/ladder_1.txt");
+        } catch (FileNotFoundException fe) {
+            System.out.println("[ERROR] --> File could not be found!");
+        }
+
+        if (parser != null) {
+            System.out.println(parser.getEdgesTotal());
+//            FlowNetwork flowNetwork = new FlowNetwork(parser);
+//            EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+//            System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+        }
     }
 }
