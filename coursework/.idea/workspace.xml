@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CW_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_Report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/FileParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test files/example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,12 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1615198095057</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added functionality to FileParser API to handle excess whitespaces">
+      <created>1615198567698</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1615198567698</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="implemented simple Flow Network API, based on input number of vertices" />
     <MESSAGE value="implemented File Parser API, to be able to read and parse the input files" />
     <MESSAGE value="implemented Flow Network API initialization based on input file" />
     <MESSAGE value="." />
@@ -327,33 +332,34 @@
     <MESSAGE value="added algorithm support comment in FlowNetwork API" />
     <MESSAGE value="added support print statements in EdmondsCarp API" />
     <MESSAGE value="got all test data files" />
-    <option name="LAST_COMMIT_MESSAGE" value="got all test data files" />
+    <MESSAGE value="added functionality to FileParser API to handle excess whitespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality to FileParser API to handle excess whitespaces" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615094879713">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615094879713" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1615198091748">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1615198565235">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615198091748" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1615198530457">
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1615198565235" />
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1615198754205">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615198530457" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1615198530457">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615198754205" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1615198754205">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615198530457" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1615198530457">
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615198754205" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1615198754204">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615198530457" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1615198530457">
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615198754204" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1615198754205">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615198530457" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615198754205" />
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1615197480553">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
