@@ -13,8 +13,9 @@ import java.io.FileNotFoundException;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         FileParser parser = new FileParser("testData.txt");
-        FlowNetwork flowNetwork = new FlowNetwork(parser);
-        EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
-        System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+        System.out.println(parser.getEdgesTotal());
+//        FlowNetwork flowNetwork = new FlowNetwork(parser);
+//        EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+//        System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
     }
 }
