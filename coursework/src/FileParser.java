@@ -6,7 +6,6 @@
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  *******************************************************************/
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,9 +32,9 @@ public class FileParser {
     /**
      * Constructor to initialize and determine
      * @param file - which file to read
-     * @throws FileNotFoundException - thrown if specified file cannot be found
+     * @throws Exception - thrown if specified file cannot be found, or file not in expected format
      */
-    public FileParser(String file) throws FileNotFoundException {
+    public FileParser(String file) throws Exception {
         FileReader FILE_READER = new FileReader(file);
         this.SCANNER = new Scanner(FILE_READER);
         this.edgeData = new ArrayList<>();
@@ -84,17 +83,23 @@ public class FileParser {
      * Will handle the parsing of data
      * Loop and split at " ", due to each item in a line being separated by " "
      * Parse the data into an Integer before assignment, since files hold String data
+     * If this format is not provided, an exception is thrown
+     * @throws Exception if expected line format is not provided
      */
-    private void parseAndSetEdges() {
+    private void parseAndSetEdges() throws Exception {
         while (this.SCANNER.hasNext()) {
-            // perform trimming, such that any extra whitespaces on both ends are removed, and to avoid empty lines
-            String[] eachLine = this.SCANNER.nextLine().trim().split(" ");
-            int v = Integer.parseInt(eachLine[0]);
-            int w = Integer.parseInt(eachLine[1]);
-            int capacity = Integer.parseInt(eachLine[2]);
-            // store each edge data separately at index v
-            this.edgeData.add(new ArrayList<>(Arrays.asList(v, w, capacity)));
-            this.edges++;
+            try {
+                // perform trimming, such that any extra whitespaces on both ends are removed, and to avoid empty lines
+                String[] eachLine = this.SCANNER.nextLine().trim().split(" ");
+                int v = Integer.parseInt(eachLine[0]);
+                int w = Integer.parseInt(eachLine[1]);
+                int capacity = Integer.parseInt(eachLine[2]);
+                // store each edge data separately at index v
+                this.edgeData.add(new ArrayList<>(Arrays.asList(v, w, capacity)));
+                this.edges++;
+            } catch (Exception e) {
+                throw new Exception();
+            }
         }
     }
 
@@ -114,9 +119,16 @@ public class FileParser {
 
     /**
      * Set vertex count. First line has the vertex count
+     * Expects a single string that can be converted to integer
+     * If not, throws an exception
+     * @throws Exception if there is an empty file, or first line format not right, as mentioned
      */
-    private void setVertex() {
-        this.vertices = Integer.parseInt(this.SCANNER.nextLine().trim());
+    private void setVertex() throws Exception {
+        try {
+            this.vertices = Integer.parseInt(this.SCANNER.nextLine().trim());
+        } catch (Exception e) {
+           throw new Exception();
+        }
     }
 
     /**

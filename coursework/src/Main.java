@@ -19,24 +19,27 @@ import java.io.FileNotFoundException;
  */
 public class Main {
     public static void main(String[] args) {
-        FileParser parser = null;
+        FileParser parser;
         try {
             parser = new FileParser("test files/example.txt");
         } catch (FileNotFoundException fe) {
+            // file was not there
             System.out.println("[ERROR] --> File could not be found!");
+            return;
+        } catch (Exception e) {
+            // problem with the file format
+            System.out.println("[ERROR] --> File was not in specified format");
+            return;
         }
 
-        // do no do anything if specified file is not present
-        if (parser != null) {
-            System.out.println(parser.getEdgesTotal());
-            FlowNetwork flowNetwork = new FlowNetwork(parser);
+        System.out.println(parser.getEdgesTotal());
+        FlowNetwork flowNetwork = new FlowNetwork(parser);
 
-            // Performance Analysis
-            double startTime = System.currentTimeMillis() / 1000.0;
-            EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
-            double endTime = System.currentTimeMillis() / 1000.0;
-            System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
-            System.out.println("Time Taken: " + (endTime - startTime));
-        }
+        // Performance Analysis
+        double startTime = System.currentTimeMillis() / 1000.0;
+        EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+        double endTime = System.currentTimeMillis() / 1000.0;
+        System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
+        System.out.println("Time Taken: " + (endTime - startTime));
     }
 }
