@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../~$_Report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_Report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/FlowEdge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/FlowEdge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/FlowNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/FlowNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/FileParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test files/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test files/example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,12 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617794036143</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="proper commented EdmondsCarp">
+      <created>1617797331840</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617797331840</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commented FileParser API" />
     <MESSAGE value="commented FlowEdge API" />
     <MESSAGE value="added delete operation into FlowNetwork" />
     <MESSAGE value="added DFS operation into FlowNetwork" />
@@ -395,33 +402,34 @@
     <MESSAGE value="proper commented Main" />
     <MESSAGE value="proper commented FlowNetwork" />
     <MESSAGE value="proper commented FileParser" />
-    <option name="LAST_COMMIT_MESSAGE" value="proper commented FileParser" />
+    <MESSAGE value="proper commented EdmondsCarp" />
+    <option name="LAST_COMMIT_MESSAGE" value="proper commented EdmondsCarp" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617794033954">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617797327890">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617794033954" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1617796508450">
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617797327890" />
+    <state width="1323" height="337" key="GridCell.Tab.0.bottom" timestamp="1617797417747">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617796508450" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1617796508450">
+    <state width="1323" height="337" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617797417747" />
+    <state width="1323" height="337" key="GridCell.Tab.0.center" timestamp="1617797417746">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617796508450" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1617796508449">
+    <state width="1323" height="337" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617797417746" />
+    <state width="1323" height="337" key="GridCell.Tab.0.left" timestamp="1617797417746">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617796508449" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1617796508450">
+    <state width="1323" height="337" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617797417746" />
+    <state width="1323" height="337" key="GridCell.Tab.0.right" timestamp="1617797417747">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617796508450" />
+    <state width="1323" height="337" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617797417747" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1615210741081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -1,5 +1,5 @@
 /* *****************************************************************
- * Name: Ammar Raneez
+ * Name: Ammar Raneez | 2019163 | W1761196
  * Description: FileParser API, be used to parse the text files
  * Written: March 2021
  * Last Updated: April 2021

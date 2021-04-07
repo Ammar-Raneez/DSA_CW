@@ -1,5 +1,5 @@
 /* *****************************************************************
- * Name: Ammar Raneez
+ * Name: Ammar Raneez | 2019163 | W1761196
  * Description: EdmondsCarp API, will compute required max flow
                 It is an algorithm that implements the Ford Fulkerson
                 method using Breadth First Search

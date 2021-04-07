@@ -1,5 +1,5 @@
 /* *****************************************************************
- * Name: Ammar Raneez
+ * Name: Ammar Raneez | 2019163 | W1761196
  * Description: Main API, be used to run the program
  * Written: March 2021
  * Last Updated: April 2021
