@@ -4,6 +4,7 @@
                 and will also be used to represent a FlowEdge
  * Written: January 2021
  * Last Updated: April 2021
+ * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  *******************************************************************/
 
 /**

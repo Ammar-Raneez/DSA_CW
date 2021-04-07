@@ -1,17 +1,24 @@
-/*
- * Main API
+/* *****************************************************************
+ * Name: Ammar Raneez
+ * Description: Main API, be used to run the program
+ * Written: January 2021
+ * Last Updated: April 2021
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
- */
+ *******************************************************************/
 
 import java.io.FileNotFoundException;
 
 /**
  * Main class, will be the main Client runner
+ * Creates a file parser from the specified text file and uses the parser to supply needed values to
+ * EdmondsCarp
+ * Will use EdmondsCarp to provide the max flow
+ * Will also time the algorithm
  * @version 1.x March 6th 2021
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class Main {
-    public static void main(String[] args) /*throws InterruptedException*/ {
+    public static void main(String[] args) {
         FileParser parser = null;
         try {
             parser = new FileParser("test files/bridge_9.txt");
