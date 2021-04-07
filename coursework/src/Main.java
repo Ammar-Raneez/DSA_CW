@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) /*throws InterruptedException*/ {
         FileParser parser = null;
         try {
             parser = new FileParser("test files/bridge_9.txt");

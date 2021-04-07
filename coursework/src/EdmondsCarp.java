@@ -23,9 +23,9 @@ public class EdmondsCarp {
      * @param flowNetwork - the FlowNetwork to perform on
      * @param source - networks source
      * @param target - networks target
-     * @throws InterruptedException - thrown on Thread sleep() of printDetails()
+//     * @throws InterruptedException - thrown on Thread sleep() of printDetails()
      */
-    public EdmondsCarp(FlowNetwork flowNetwork, int source, int target) throws InterruptedException {
+    public EdmondsCarp(FlowNetwork flowNetwork, int source, int target) /*throws InterruptedException*/ {
         //*start by initializing flow to 0*//
         this.flowValue = 0;
         int augmentingPaths = 0;
@@ -62,9 +62,9 @@ public class EdmondsCarp {
      * Print some details about each iteration
      * @param bottleneckCapacity - amount of flow for an iteration
      * @param augmentingPaths - current number of augmenting path
-     * @throws InterruptedException - thrown in Thread sleep()
+//     * @throws InterruptedException - thrown in Thread sleep()
      */
-    private void printDetails(int bottleneckCapacity, int augmentingPaths) throws InterruptedException {
+    private void printDetails(int bottleneckCapacity, int augmentingPaths) /*throws InterruptedException*/ {
         System.out.println("Augmenting Path: " + augmentingPaths);
         System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
         System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
