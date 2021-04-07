@@ -42,14 +42,13 @@ public class EdmondsCarp {
 
         System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices() + "\n\n");
 
-        // Ford Fulkerson Algorithm
+        // Ford Fulkerson Algorithm, while there exists an augmenting path keep going
         while (hasAugmentingPath(flowNetwork, source, target)) {
             // the maximum flow that can be pushed at a time, initialized to infinity, if it was initialized as 0
             // always and only zero will be flown
             int bottleneckCapacity = Integer.MAX_VALUE;
 
             // The for loops are designed in a way to "re track" the path taken, in other words, it goes backwards
-
             // determine bottleneck capacity, to increment the flow value
             for (int v = target; v != source; v = edgeTo[v].otherEnd(v)) {
                 bottleneckCapacity = Math.min(bottleneckCapacity, edgeTo[v].residualCapacity(v));
