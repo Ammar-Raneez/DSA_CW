@@ -21,14 +21,15 @@ public class Main {
     public static void main(String[] args) {
         FileParser parser;
         try {
-            parser = new FileParser("test files/ladder_1.txt");
+            parser = new FileParser("testFiles/example.txt");
         } catch (FileNotFoundException fe) {
             // file was not there
             System.out.println("[ERROR] --> File could not be found!");
             return;
         } catch (Exception e) {
             // problem with the file format
-            System.out.println("[ERROR] --> File was not in specified format");
+            e.printStackTrace();
+            System.out.println("[ERROR] --> stopping program...");
             return;
         }
 

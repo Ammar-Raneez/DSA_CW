@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/bridge_9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/bridge_9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test files/ladder_9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/ladder_9.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,12 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617808478157</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="all test files still work">
+      <created>1617808616160</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1617808616160</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
     <MESSAGE value="moved print statement to dedicated private method" />
     <MESSAGE value="separated method concerns in FileParser API" />
     <MESSAGE value="changed FordFulkerson.java to EdmondsCarp.java" />
@@ -455,33 +484,34 @@
     <MESSAGE value="delete edge reduces edge count" />
     <MESSAGE value="validating invalid vertex values in EdmondsCarp" />
     <MESSAGE value="catch multiple different errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="catch multiple different errors" />
+    <MESSAGE value="all test files still work" />
+    <option name="LAST_COMMIT_MESSAGE" value="all test files still work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617808476287">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617808614613">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617808476287" />
-    <state width="1323" height="244" key="GridCell.Tab.0.bottom" timestamp="1617808605212">
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617808614613" />
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1617809312160">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617808605212" />
-    <state width="1323" height="244" key="GridCell.Tab.0.center" timestamp="1617808605212">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617809312160" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1617809312160">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617808605212" />
-    <state width="1323" height="244" key="GridCell.Tab.0.left" timestamp="1617808605212">
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617809312160" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1617809312160">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617808605212" />
-    <state width="1323" height="244" key="GridCell.Tab.0.right" timestamp="1617808605212">
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617809312160" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1617809312160">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617808605212" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617809312160" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1615210741081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

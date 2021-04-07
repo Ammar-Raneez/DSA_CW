@@ -89,7 +89,7 @@ public class FileParser {
     private void parseAndSetEdges() throws Exception {
         while (this.SCANNER.hasNext()) {
             try {
-                // perform trimming, such that any extra whitespaces on both ends are removed, and to avoid empty lines
+                // perform trimming, so that any extra whitespaces on both ends are removed, and to avoid empty lines
                 String[] eachLine = this.SCANNER.nextLine().trim().split(" ");
                 int v = Integer.parseInt(eachLine[0]);
                 int w = Integer.parseInt(eachLine[1]);

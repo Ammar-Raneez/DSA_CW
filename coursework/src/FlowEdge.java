@@ -27,6 +27,7 @@ public class FlowEdge {
      * @param vertexFrom - from vertex this
      * @param vertexTo - to vertex this
      * @param capacity - the capacity this edge can hold
+     * @throws IllegalArgumentException when parameters are non-negative integers or arguments are invalid completely
      */
     public FlowEdge(int vertexFrom, int vertexTo, int capacity) {
         try {
@@ -73,6 +74,7 @@ public class FlowEdge {
     /**
      * @param vertex - vertex passed to get other end
      * @return other end of passed vertex in this edge
+     * @throws IllegalArgumentException if the specified vertex is not proper
      */
     public int otherEnd(int vertex) {
         if (vertex == VERTEX_FROM) {
@@ -86,6 +88,7 @@ public class FlowEdge {
      * Gets the residual capacity of this edge, based on whether vertex is from or to
      * @param vertex - passed
      * @return residual capacity
+     * @throws IllegalArgumentException if the specified vertex is not proper
      */
     public int residualCapacity(int vertex) {
         // backward edge
@@ -101,21 +104,21 @@ public class FlowEdge {
     /**
      * Adds residual flow to this edge
      * @param vertex - if backward vertex, remove flow, else add
-     * @param delta - flow amount
-     * throws IllegalArgumentException if delta is negative, flow is negative, flow is more than capacity, and if vertex
-     * is invalid
+     * @param flowChange - flow amount
+     * @throws IllegalArgumentException if flowChange is negative, flow is negative, flow is more than capacity,
+     * and if vertex is invalid
      */
-    public void addResidualFlow(int vertex, int delta) {
-        if (delta < 0) {
-            throw new IllegalArgumentException("[ERROR] --> Illegal Delta, must be non-negative");
+    public void addResidualFlow(int vertex, int flowChange) {
+        if (flowChange < 0) {
+            throw new IllegalArgumentException("[ERROR] --> Illegal flowChange, must be non-negative");
         }
         // backward edge
         if (vertex == VERTEX_FROM) {
-            flow -= delta;
+            flow -= flowChange;
         }
         // forward edge
         else if (vertex == VERTEX_TO) {
-            flow += delta;
+            flow += flowChange;
         }
         // invalid vertex
         else {
