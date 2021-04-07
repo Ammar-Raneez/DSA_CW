@@ -16,7 +16,7 @@
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class EdmondsCarp {
-    private static final double CUT_OFF_VALUE_FOR_EDGE_VALIDATION = 1E-11;
+    private static final double CUT_OFF_VALUE_FOR_EDGE_VALIDATION = 1E-11;  // very tiny value close to 0
 
     private final int VERTICES;         // Number of vertices
     private FlowEdge[] edgeTo;          // will hold the path, on how we reach each vertex
@@ -27,6 +27,8 @@ public class EdmondsCarp {
      * @param flowNetwork - the FlowNetwork to perform on
      * @param source - networks source
      * @param target - networks target
+     * @throws IllegalArgumentException if source or target are out of bounds of 0 and V-1; when source and target are same or
+     * if the initial flow is not feasible for the network
      */
     public EdmondsCarp(FlowNetwork flowNetwork, int source, int target) {
         this.flowValue = 0;         // start by initializing flow to 0
@@ -180,7 +182,7 @@ public class EdmondsCarp {
     /**
      * vertex validation
      * @param v - which vertex to validate
-     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * @throws IllegalArgumentException if vertex is out of bounds of 0 and V
      * starts from 0, therefore will go till total-1
      */
     private void validVertex(int v) {
