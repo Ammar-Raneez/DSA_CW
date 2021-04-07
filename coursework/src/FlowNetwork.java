@@ -1,6 +1,6 @@
 /* *****************************************************************
  * Name: Ammar Raneez | 2019163 | W1761196
- * Description: FlowNetwork API, be used to represent the network
+ * Description: FlowNetwork API, used to represent the network
                 and handle operations associated with it
  * Written: march 2021
  * Last Updated: April 2021
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * FlowNetwork class, which will be used to represent the Graph Network
+ * FlowNetwork API, which will be used to represent the Graph Network
  * Each edge of this network is a FlowEdge which has a flow and capacity
  * Supports addition of edges, deletion of edges, and breadth-first-search to iterate over the edges
  * It further provides methods to get the number of vertices and edges and all adjacent vertices of a specific vertex
@@ -47,7 +47,6 @@ public class FlowNetwork {
      * Initialize flow network based on an input file
      * Since the FileParser is tailored specifically for an expected format
      * The values are directly obtained from the parser
-     * Throws exception if the values are below 0
      * @param parser - object of FileParser
      * @throws IllegalArgumentException - if edges or vertices value are less than 0
      */
@@ -65,10 +64,10 @@ public class FlowNetwork {
 
         // Add all the read edges into the Network
         for (int i = 0; i < this.edges; i++) {
-            int v = parser.getEdgeData().get(i).get(0);
-            int w = parser.getEdgeData().get(i).get(1);
+            int vertexFrom = parser.getEdgeData().get(i).get(0);
+            int vertexTo = parser.getEdgeData().get(i).get(1);
             int capacity = parser.getEdgeData().get(i).get(2);
-            addEdge(new FlowEdge(v, w, capacity));
+            addEdge(new FlowEdge(vertexFrom, vertexTo, capacity));
         }
     }
 
@@ -79,16 +78,16 @@ public class FlowNetwork {
      */
     public void addEdge(FlowEdge edge) {
         // Get the edges forward and backward vertex
-        int v = edge.from();
-        int w = edge.to();
+        int vertexFrom = edge.from();
+        int vertexTo = edge.to();
 
         // must be in between 0 and V
-        validVertex(v);
-        validVertex(w);
+        validVertex(vertexFrom);
+        validVertex(vertexTo);
 
         // at the obtained vertices, add the edge, into their adjacency lists
-        ADJACENCY_LIST.get(v).add(edge);
-        ADJACENCY_LIST.get(w).add(edge);
+        ADJACENCY_LIST.get(vertexFrom).add(edge);
+        ADJACENCY_LIST.get(vertexTo).add(edge);
     }
 
     /**
@@ -97,16 +96,16 @@ public class FlowNetwork {
      * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      */
     public void deleteEdge(FlowEdge edge) {
-        int v = edge.from();
-        int w = edge.to();
+        int vertexFrom = edge.from();
+        int vertexTo = edge.to();
 
         // must be in between 0 and V
-        validVertex(v);
-        validVertex(w);
+        validVertex(vertexFrom);
+        validVertex(vertexTo);
 
         // removing v from w's adjacency list, and vice versa
-        ADJACENCY_LIST.get(v).remove(edge);
-        ADJACENCY_LIST.get(w).remove(edge);
+        ADJACENCY_LIST.get(vertexFrom).remove(edge);
+        ADJACENCY_LIST.get(vertexTo).remove(edge);
 
         // total number of edges decreases by 1 upon edge deletion
         this.edges--;
@@ -135,15 +134,15 @@ public class FlowNetwork {
         marked[source] = true;
 
         while (!q.isEmpty()) {
-            int v = q.remove();
+            int vertexFrom = q.remove();
 
-            for (FlowEdge edge : getAdjacent(v)) {
-                int w = edge.otherEnd(v);
+            for (FlowEdge edge : getAdjacent(vertexFrom)) {
+                int vertexTo = edge.otherEnd(vertexFrom);
                 // add each unvisited neighbor to queue, and mark them as visited, whilst storing their edge in the edgeTo path
-                if (edge.residualCapacity(w) > 0 && !marked[w]) {
-                    edgeTo[w] = edge;
-                    marked[w] = true;
-                    q.add(w);
+                if (edge.residualCapacity(vertexTo) > 0 && !marked[vertexTo]) {
+                    edgeTo[vertexTo] = edge;
+                    marked[vertexTo] = true;
+                    q.add(vertexTo);
                 }
             }
         }
@@ -153,13 +152,14 @@ public class FlowNetwork {
     }
 
     /**
-     * @param v - whose list to get
+     * Get the edges incident to passed v
+     * @param vertex - whose list to get
      * @return - an Array list of type FlowEdge (the list of vertices)
      * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      */
-    public ArrayList<FlowEdge> getAdjacent(int v) {
-        validVertex(v);
-        return ADJACENCY_LIST.get(v);
+    public ArrayList<FlowEdge> getAdjacent(int vertex) {
+        validVertex(vertex);
+        return ADJACENCY_LIST.get(vertex);
     }
 
     /**
@@ -178,12 +178,12 @@ public class FlowNetwork {
 
     /**
      * vertex validation
-     * @param v - which vertex to validate
+     * @param vertex - which vertex to validate
      * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      * starts from 0, therefore will go till total-1
      */
-    private void validVertex(int v) {
-        if (v < 0 || v >= vertices) {
+    private void validVertex(int vertex) {
+        if (vertex < 0 || vertex >= vertices) {
             throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + vertices + " and greater than 0");
         }
     }

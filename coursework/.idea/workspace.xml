@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../~WRL0540.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_Report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +50,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DSA_CW-master/coursework" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -104,13 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615024945665</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added validation to FlowEdge API">
-      <created>1615041056344</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1615041056344</updated>
     </task>
     <task id="LOCAL-00004" summary="implemented simple Flow Network API, based on input number of vertices">
       <created>1615041336630</created>
@@ -448,12 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617810208340</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="removed unnecessary initial flow checking">
+      <created>1617812282841</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1617812282841</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added support comments in EdmondsCarp API" />
     <MESSAGE value="added algorithm support comment in FlowNetwork API" />
     <MESSAGE value="added support print statements in EdmondsCarp API" />
     <MESSAGE value="got all test data files" />
@@ -478,49 +483,54 @@
     <MESSAGE value="commented FlowNetwork throws" />
     <MESSAGE value="commented EdmondsCarp throws" />
     <MESSAGE value="commented Main and FlowEdge throws" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented Main and FlowEdge throws" />
+    <MESSAGE value="removed unnecessary initial flow checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary initial flow checking" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1617810205236">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1617812279687">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617810205236" />
-    <state width="1323" height="116" key="GridCell.Tab.0.bottom" timestamp="1617810737630">
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617812279687" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1617812757618">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="116" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
-    <state width="1323" height="116" key="GridCell.Tab.0.center" timestamp="1617810737630">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1617812757618" />
+    <state width="1323" height="326" key="GridCell.Tab.0.bottom" timestamp="1617814889622">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="116" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
-    <state width="1323" height="116" key="GridCell.Tab.0.left" timestamp="1617810737630">
+    <state width="1323" height="326" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617814889622" />
+    <state width="1323" height="326" key="GridCell.Tab.0.center" timestamp="1617814889621">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="116" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
-    <state width="1323" height="116" key="GridCell.Tab.0.right" timestamp="1617810737630">
+    <state width="1323" height="326" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617814889621" />
+    <state width="1323" height="326" key="GridCell.Tab.0.left" timestamp="1617814889621">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="116" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1615210741081">
+    <state width="1323" height="326" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617814889621" />
+    <state width="1323" height="326" key="GridCell.Tab.0.right" timestamp="1617814889622">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615210741081" />
-    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1615210741080">
+    <state width="1323" height="326" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617814889622" />
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1617813182540">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1615210741080" />
-    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1615210741080">
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617813182540" />
+    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1617813182539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1615210741080" />
-    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1615210741080">
+    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1617813182539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1615210741080" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1617813182539">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
     <state x="329" y="0" key="SettingsEditor" timestamp="1617781691905">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -537,10 +547,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1617810572384" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1615090488934">
+    <state x="65" y="0" key="new project wizard" timestamp="1617812723821">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1615090488934" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1617812723821" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1617814454131">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1617814454131" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1617807448142">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

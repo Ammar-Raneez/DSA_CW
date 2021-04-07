@@ -91,11 +91,11 @@ public class FileParser {
             try {
                 // perform trimming, so that any extra whitespaces on both ends are removed, and to avoid empty lines
                 String[] eachLine = this.SCANNER.nextLine().trim().split(" ");
-                int v = Integer.parseInt(eachLine[0]);
-                int w = Integer.parseInt(eachLine[1]);
+                int vertexFrom = Integer.parseInt(eachLine[0]);
+                int vertexTo = Integer.parseInt(eachLine[1]);
                 int capacity = Integer.parseInt(eachLine[2]);
                 // store each edge data separately at index v
-                this.edgeData.add(new ArrayList<>(Arrays.asList(v, w, capacity)));
+                this.edgeData.add(new ArrayList<>(Arrays.asList(vertexFrom, vertexTo, capacity)));
                 this.edges++;
             } catch (Exception e) {
                 throw new Exception("[ERROR] --> this line is not in the expected format of 3 space separated integers");

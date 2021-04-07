@@ -109,12 +109,12 @@ public class EdmondsCarp {
 
     /**
      * vertex validation
-     * @param v - which vertex to validate
+     * @param vertex - which vertex to validate
      * @throws IllegalArgumentException if vertex is out of bounds of 0 and V
      * starts from 0, therefore will go till total-1
      */
-    private void validVertex(int v) {
-        if (v < 0 || v >= VERTICES) {
+    private void validVertex(int vertex) {
+        if (vertex < 0 || vertex >= VERTICES) {
             throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + VERTICES +
                     " and greater than 0");
         }

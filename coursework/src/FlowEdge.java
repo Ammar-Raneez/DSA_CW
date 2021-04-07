@@ -8,7 +8,7 @@
  *******************************************************************/
 
 /**
- * FlowEdge class, which will be used to represent the Edges in the data structure
+ * FlowEdge API, which will be used to represent the Edges in the data structure
  * Each edge has a vertex from and a vertex to, a capacity and a flow
  * This API provides methods for accessing the other end of a vertex, altering amount of flow
  * and determining the residual capacity
@@ -73,6 +73,7 @@ public class FlowEdge {
     }
 
     /**
+     * Gets the other end of the edge of the passed vertex
      * @param vertex - vertex passed to get other end
      * @return other end of passed vertex in this edge
      * @throws IllegalArgumentException if the specified vertex is not proper
@@ -107,7 +108,7 @@ public class FlowEdge {
      * @param vertex - if backward vertex, remove flow, else add
      * @param flowChange - flow amount
      * @throws IllegalArgumentException if flowChange is negative, flow is negative, flow is more than capacity,
-     * and if vertex is invalid
+     * or if vertex is invalid
      */
     public void addResidualFlow(int vertex, int flowChange) {
         if (flowChange < 0) {
