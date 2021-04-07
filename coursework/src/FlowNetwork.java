@@ -46,7 +46,9 @@ public class FlowNetwork {
      * Initialize flow network based on an input file
      * Since the FileParser is tailored specifically for an expected format
      * The values are directly obtained from the parser
+     * Throws exception if the values are below 0
      * @param parser - object of FileParser
+     * @throws IllegalArgumentException - if edges or vertices value are less than 0
      */
     public FlowNetwork(FileParser parser) {
         // call previous constructor to initialize
@@ -55,6 +57,10 @@ public class FlowNetwork {
         // Number of edges & vertices are defined in the data file itself, as specified
         this.edges = parser.getEdgesTotal();
         this.vertices = parser.getVerticesTotal();
+
+        if (this.edges < 0 || this.vertices < 0) {
+            throw new IllegalArgumentException("Negative edges or vertices not allowed");
+        }
 
         // Add all the read edges into the Network
         for (int i = 0; i < this.edges; i++) {
@@ -100,6 +106,9 @@ public class FlowNetwork {
         // removing v from w's adjacency list, and vice versa
         ADJACENCY_LIST.get(v).remove(edge);
         ADJACENCY_LIST.get(w).remove(edge);
+
+        // total number of edges decreases by 1 upon edge deletion
+        this.edges--;
     }
 
     /**
@@ -169,6 +178,7 @@ public class FlowNetwork {
      * vertex validation
      * @param v - which vertex to validate
      * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * starts from 0, therefore will go till total-1
      */
     private void validVertex(int v) {
         if (v < 0 || v > vertices) {
