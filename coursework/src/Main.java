@@ -33,11 +33,29 @@ public class Main {
         }
 
         System.out.println(parser.getEdgesTotal());
-        FlowNetwork flowNetwork = new FlowNetwork(parser);
+
+        // create only flow networks with valid edge and vertex totals (must be non negative)
+        FlowNetwork flowNetwork;
+        try {
+            flowNetwork = new FlowNetwork(parser);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
 
         // Performance Analysis
         double startTime = System.currentTimeMillis() / 1000.0;
-        EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+
+        // only proper flow networks would work
+        EdmondsCarp edmondsCarp;
+        try {
+            edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("[ERROR] --> stopping program...");
+            return;
+        }
+
         double endTime = System.currentTimeMillis() / 1000.0;
         System.out.println("Max Flow determined: " + edmondsCarp.getFlowValue());
         System.out.println("Time Taken: " + (endTime - startTime));
