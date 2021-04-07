@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,12 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617800398577</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="delete edge reduces edge count">
+      <created>1617802377706</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1617802377706</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commented FlowNetwork BFS API" />
     <MESSAGE value="moved main() to dedicated class" />
     <MESSAGE value="added TODO comments, to be continued" />
     <MESSAGE value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
@@ -417,17 +424,18 @@
     <MESSAGE value="added student ID to header" />
     <MESSAGE value="added functionality to file parser to look out for problematic files" />
     <MESSAGE value="made conditioning easier in FlowEdge" />
-    <option name="LAST_COMMIT_MESSAGE" value="made conditioning easier in FlowEdge" />
+    <MESSAGE value="delete edge reduces edge count" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete edge reduces edge count" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617800396169">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617802374992">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617800396169" />
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617802374992" />
     <state width="1323" height="267" key="GridCell.Tab.0.bottom" timestamp="1617799323084">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

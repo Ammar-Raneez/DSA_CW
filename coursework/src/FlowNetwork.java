@@ -147,6 +147,7 @@ public class FlowNetwork {
             }
         }
 
+        // if there is an augmenting path
         return marked[target];
     }
 
@@ -181,7 +182,7 @@ public class FlowNetwork {
      * starts from 0, therefore will go till total-1
      */
     private void validVertex(int v) {
-        if (v < 0 || v > vertices) {
+        if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + vertices + " and greater than 0");
         }
     }

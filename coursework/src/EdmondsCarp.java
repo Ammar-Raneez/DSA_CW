@@ -16,6 +16,7 @@
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class EdmondsCarp {
+    private final int VERTICES;         // Number of vertices
     private FlowEdge[] edgeTo;          // will hold the path, on how we reach each vertex
     private int flowValue;              // value of the max flow
 
@@ -28,6 +29,16 @@ public class EdmondsCarp {
     public EdmondsCarp(FlowNetwork flowNetwork, int source, int target) {
         this.flowValue = 0;         // start by initializing flow to 0
         int augmentingPaths = 0;    // augmenting paths are 0 at first
+        this.VERTICES = flowNetwork.getNumberOfVertices();
+
+        // check to see whether source and target are valid vertices
+        validVertex(source);
+        validVertex(target);
+
+        // same source and target
+        if (source == target) {
+            throw new IllegalArgumentException("Source and target are the same");
+        }
 
         System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices() + "\n\n");
 
@@ -67,7 +78,10 @@ public class EdmondsCarp {
         System.out.println("Augmenting Path: " + augmentingPaths);
         System.out.println("Bottleneck Capacity: " + bottleneckCapacity);
         System.out.print("Flow Value Incrementing from: " + flowValue + " to: ");
+
+        // add to flow value, the current bottleneck
         flowValue += bottleneckCapacity;
+
         System.out.println(flowValue);
         System.out.println();
     }
@@ -89,5 +103,17 @@ public class EdmondsCarp {
      */
     public int getFlowValue() {
         return flowValue;
+    }
+
+    /**
+     * vertex validation
+     * @param v - which vertex to validate
+     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * starts from 0, therefore will go till total-1
+     */
+    private void validVertex(int v) {
+        if (v < 0 || v >= VERTICES) {
+            throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + VERTICES + " and greater than 0");
+        }
     }
 }
