@@ -2,7 +2,7 @@
  * Name: Ammar Raneez
  * Description: FlowEdge API, will handle operations of FlowEdge
                 and will also be used to represent a FlowEdge
- * Written: January 2021
+ * Written: March 2021
  * Last Updated: April 2021
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  *******************************************************************/
@@ -19,7 +19,6 @@ public class FlowEdge {
     private final int VERTEX_FROM; // Backward (Start Vertex, Pointing FROM vertex)
     private final int VERTEX_TO;   // Forward (End Vertex, Pointing TO wards vertex)
     private final int CAPACITY;    // this edges capacity
-
 
     private int flow;              // edge flow - will change depending on the augmented path
 

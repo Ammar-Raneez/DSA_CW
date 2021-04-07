@@ -1,7 +1,7 @@
 /* *****************************************************************
  * Name: Ammar Raneez
  * Description: Main API, be used to run the program
- * Written: January 2021
+ * Written: March 2021
  * Last Updated: April 2021
  * Copyright © 2021 Ammar Raneez. All Rights Reserved.
  *******************************************************************/
@@ -26,11 +26,12 @@ public class Main {
             System.out.println("[ERROR] --> File could not be found!");
         }
 
+        // do no do anything if specified file is not present
         if (parser != null) {
             System.out.println(parser.getEdgesTotal());
             FlowNetwork flowNetwork = new FlowNetwork(parser);
 
-            //*Performance Analysis*//
+            // Performance Analysis
             double startTime = System.currentTimeMillis() / 1000.0;
             EdmondsCarp edmondsCarp = new EdmondsCarp(flowNetwork, parser.getSource(), parser.getSink());
             double endTime = System.currentTimeMillis() / 1000.0;
