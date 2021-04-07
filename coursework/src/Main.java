@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) {
         FileParser parser = null;
         try {
-            parser = new FileParser("test files/bridge_9.txt");
+            parser = new FileParser("test files/example.txt");
         } catch (FileNotFoundException fe) {
             System.out.println("[ERROR] --> File could not be found!");
         }
