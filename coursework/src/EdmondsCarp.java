@@ -16,8 +16,6 @@
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class EdmondsCarp {
-    private static final double CUT_OFF_VALUE_FOR_EDGE_VALIDATION = 1E-11;  // very tiny value close to 0
-
     private final int VERTICES;         // Number of vertices
     private FlowEdge[] edgeTo;          // will hold the path, on how we reach each vertex
     private int flowValue;              // value of the max flow
@@ -42,11 +40,6 @@ public class EdmondsCarp {
         // same source and target no flow
         if (source == target) {
             throw new IllegalArgumentException("[ERROR] --> Source and target are the same");
-        }
-
-        // check if the initial flow is feasible
-        if (!isFeasible(flowNetwork, source, target)) {
-            throw new IllegalArgumentException("[ERROR] --> Infeasible initial flow value");
         }
 
         System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " +
@@ -112,71 +105,6 @@ public class EdmondsCarp {
      */
     public int getFlowValue() {
         return flowValue;
-    }
-
-    /**
-     * Get excess flow of a vertex
-     * Use the excess flows to determine feasibility
-     * @param flowNetwork - which flow network
-     * @param vertex - which vertex in the flow network
-     * @return - the excess flow
-     */
-    private double excessFlow(FlowNetwork flowNetwork, int vertex) {
-        double excessFlow = 0.0;
-
-        for (FlowEdge edge : flowNetwork.getAdjacent(vertex)) {
-            if (vertex == edge.from()) {
-                excessFlow -= edge.getFlow();
-            }
-            else {
-                excessFlow += edge.getFlow();
-            }
-        }
-        return excessFlow;
-    }
-
-    /**
-     * Check for algorithm feasibility
-     * @param flowNetwork - which flow network
-     * @param source - source
-     * @param sink - target
-     * @return - feasible or not
-     */
-    private boolean isFeasible(FlowNetwork flowNetwork, int source, int sink) {
-
-        // check whether all edges satisfy their capacity constraints
-        for (int vertex = 0; vertex < flowNetwork.getNumberOfVertices(); vertex++) {
-            for (FlowEdge edge : flowNetwork.getAdjacent(vertex)) {
-                if (edge.getFlow() < -CUT_OFF_VALUE_FOR_EDGE_VALIDATION ||
-                        edge.getFlow() > edge.getCapacity() + CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-                    System.out.println("Edge does not satisfy capacity constraints: " + edge);
-                    return false;
-                }
-            }
-        }
-
-        // net flow must be zero for all, except source and sink
-        if (Math.abs(flowValue + excessFlow(flowNetwork, source)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-            System.out.println("Excess at source = " + excessFlow(flowNetwork, source));
-            System.out.println("Max flow = " + flowValue);
-            return false;
-        }
-        if (Math.abs(flowValue - excessFlow(flowNetwork, sink)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-            System.out.println("Excess at sink = " + excessFlow(flowNetwork, sink));
-            System.out.println("Max flow = " + flowValue);
-            return false;
-        }
-        for (int vertex = 0; vertex < flowNetwork.getNumberOfVertices(); vertex++) {
-            // does not have to be zero for source or sink
-            if (vertex == source || vertex == sink) {
-                continue;
-            }
-            if (Math.abs(excessFlow(flowNetwork, vertex)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-                System.out.println("Net flow out of " + vertex + " doesn't equal zero");
-                return false;
-            }
-        }
-        return true;
     }
 
     /**

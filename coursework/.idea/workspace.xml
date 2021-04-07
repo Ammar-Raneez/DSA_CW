@@ -4,6 +4,7 @@
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,20 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615024945665</updated>
-    </task>
-    <task id="LOCAL-00001" summary="implemented flow edge API, that will be used as the edges in the flow network">
-      <created>1615037255674</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1615037255674</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added toString() to FlowEdge API">
-      <created>1615037451978</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1615037451978</updated>
     </task>
     <task id="LOCAL-00003" summary="added validation to FlowEdge API">
       <created>1615041056344</created>
@@ -447,13 +434,25 @@
       <option name="project" value="LOCAL" />
       <updated>1617809837400</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="commented EdmondsCarp throws">
+      <created>1617810009315</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617810009315</updated>
+    </task>
+    <task id="LOCAL-00051" summary="commented Main and FlowEdge throws">
+      <created>1617810208340</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1617810208340</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed FordFulkerson.java to EdmondsCarp.java" />
-    <MESSAGE value="removed unneeded cast in EdmondsCarp.java" />
     <MESSAGE value="added support comments in EdmondsCarp API" />
     <MESSAGE value="added algorithm support comment in FlowNetwork API" />
     <MESSAGE value="added support print statements in EdmondsCarp API" />
@@ -477,33 +476,35 @@
     <MESSAGE value="all test files still work" />
     <MESSAGE value="commented FlowEdge throws" />
     <MESSAGE value="commented FlowNetwork throws" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented FlowNetwork throws" />
+    <MESSAGE value="commented EdmondsCarp throws" />
+    <MESSAGE value="commented Main and FlowEdge throws" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented Main and FlowEdge throws" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="389" y="0" key="CommitChangelistDialog2" timestamp="1617810007774">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1617810205236">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="389" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617810007774" />
-    <state width="1323" height="248" key="GridCell.Tab.0.bottom" timestamp="1617810176460">
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617810205236" />
+    <state width="1323" height="116" key="GridCell.Tab.0.bottom" timestamp="1617810737630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617810176460" />
-    <state width="1323" height="248" key="GridCell.Tab.0.center" timestamp="1617810176460">
+    <state width="1323" height="116" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
+    <state width="1323" height="116" key="GridCell.Tab.0.center" timestamp="1617810737630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617810176460" />
-    <state width="1323" height="248" key="GridCell.Tab.0.left" timestamp="1617810176460">
+    <state width="1323" height="116" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
+    <state width="1323" height="116" key="GridCell.Tab.0.left" timestamp="1617810737630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617810176460" />
-    <state width="1323" height="248" key="GridCell.Tab.0.right" timestamp="1617810176460">
+    <state width="1323" height="116" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
+    <state width="1323" height="116" key="GridCell.Tab.0.right" timestamp="1617810737630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="248" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617810176460" />
+    <state width="1323" height="116" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617810737630" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1615210741081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -532,6 +533,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738@0.0.1366.738" timestamp="1617807948585" />
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617810572384">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1617810572384" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1615090488934">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
