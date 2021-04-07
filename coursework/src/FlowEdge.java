@@ -21,9 +21,9 @@
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class FlowEdge {
-    private final int vertexFrom; //*Backward (Start Vertex, Pointing FROM vertex)*//
-    private final int vertexTo;   //*Forward (End Vertex, Pointing TO wards vertex)*//
-    private final int capacity;   //*this edges capacity*//
+    private final int VERTEX_FROM; //*Backward (Start Vertex, Pointing FROM vertex)*//
+    private final int VERTEX_TO;   //*Forward (End Vertex, Pointing TO wards vertex)*//
+    private final int CAPACITY;   //*this edges capacity*//
 
     //*edge flow - will change depending on the augmented path*//
     private int flow;
@@ -36,11 +36,11 @@ public class FlowEdge {
      */
     public FlowEdge(int vertexFrom, int vertexTo, int capacity) {
         try {
-            this.vertexFrom = vertexFrom;
-            this.vertexTo = vertexTo;
-            this.capacity = capacity;
+            this.VERTEX_FROM = vertexFrom;
+            this.VERTEX_TO = vertexTo;
+            this.CAPACITY = capacity;
         } catch (Exception e) {
-            throw new IllegalArgumentException("Illegal Arguments passed");
+            throw new IllegalArgumentException("[ERROR] - Illegal Arguments passed");
         }
     }
 
@@ -48,21 +48,21 @@ public class FlowEdge {
      * @return from which vertex does the edge start
      */
     public int from() {
-        return this.vertexFrom;
+        return this.VERTEX_FROM;
     }
 
     /**
      * @return to which vertex does the edge go to
      */
     public int to() {
-        return this.vertexTo;
+        return this.VERTEX_TO;
     }
 
     /**
      * @return this edges capacity
      */
     public int getCapacity() {
-        return this.capacity;
+        return this.CAPACITY;
     }
 
     /**
@@ -77,10 +77,10 @@ public class FlowEdge {
      * @return other end of passed vertex in this edge
      */
     public int otherEnd(int vertex) {
-        if (vertex == vertexFrom) {
-            return this.vertexTo;
-        } else if (vertex == vertexTo) {
-            return this.vertexFrom;
+        if (vertex == VERTEX_FROM) {
+            return this.VERTEX_TO;
+        } else if (vertex == VERTEX_TO) {
+            return this.VERTEX_FROM;
         } throw new IllegalArgumentException("Illegal Vertex");
     }
 
@@ -90,12 +90,12 @@ public class FlowEdge {
      */
     public int residualCapacity(int vertex) {
         //*backward edge*//
-        if (vertex == vertexFrom) {
+        if (vertex == VERTEX_FROM) {
             return flow;
         }
         //*forward edge, vertex = w means V->W*//
-        else if (vertex == vertexTo) {
-            return capacity - flow;
+        else if (vertex == VERTEX_TO) {
+            return CAPACITY - flow;
         } throw new IllegalArgumentException("Illegal Vertex");
     }
 
@@ -109,11 +109,11 @@ public class FlowEdge {
             throw new IllegalArgumentException("Illegal Delta, please use Non-negative integers");
         }
         //*backward edge*//
-        if (vertex == vertexFrom) {
+        if (vertex == VERTEX_FROM) {
             flow -= delta;
         }
         //*forward edge*//
-        else if (vertex == vertexTo) {
+        else if (vertex == VERTEX_TO) {
             flow += delta;
         }
         else {
@@ -123,13 +123,13 @@ public class FlowEdge {
         if (!(flow >= 0)) {
             throw new IllegalArgumentException("Flow must be positive");
         }
-        if (!(flow <= capacity)) {
+        if (!(flow <= CAPACITY)) {
             throw new IllegalArgumentException("Flow must not exceed allowed capacity");
         }
     }
 
     @Override
     public String toString() {
-        return "Flow Edge: " + vertexFrom + "->" + vertexTo + ", Flow: " + flow + ", Capacity: " + capacity;
+        return "Flow Edge: " + VERTEX_FROM + "->" + VERTEX_TO + ", Flow: " + flow + ", Capacity: " + CAPACITY;
     }
 }

@@ -17,7 +17,7 @@ public class FlowNetwork {
     //*number of vertices in the Network*//
     private int vertices;
     //*Adjacency List implementation, will hold the vertices, and each vertex will hold the edges that are incident to it*//
-    private List<ArrayList<FlowEdge>> adjacencyList;
+    private final List<ArrayList<FlowEdge>> ADJACENCY_LIST;
     //*number of edges in the Network*//
     private int edges;
 
@@ -30,9 +30,9 @@ public class FlowNetwork {
             throw new IllegalArgumentException("Negative Vertices not allowed");
         }
         this.vertices = V;
-        adjacencyList = new ArrayList<>();
+        ADJACENCY_LIST = new ArrayList<>();
         for (int v = 0; v < V; v++) {
-            adjacencyList.add(new ArrayList<>());
+            ADJACENCY_LIST.add(new ArrayList<>());
         }
     }
 
@@ -71,8 +71,8 @@ public class FlowNetwork {
         validVertex(v);
         validVertex(w);
         //*at the obtained vertices, add the edge, into their adjacency lists*//
-        adjacencyList.get(v).add(edge);
-        adjacencyList.get(w).add(edge);
+        ADJACENCY_LIST.get(v).add(edge);
+        ADJACENCY_LIST.get(w).add(edge);
     }
 
     /**
@@ -87,8 +87,8 @@ public class FlowNetwork {
         validVertex(w);
 
         //*removing v from w's adjacency list, and vice versa*//
-        adjacencyList.get(v).remove(edge);
-        adjacencyList.get(w).remove(edge);
+        ADJACENCY_LIST.get(v).remove(edge);
+        ADJACENCY_LIST.get(w).remove(edge);
     }
 
     /**
@@ -136,7 +136,7 @@ public class FlowNetwork {
      */
     public ArrayList<FlowEdge> getAdjacent(int v) {
         validVertex(v);
-        return adjacencyList.get(v);
+        return ADJACENCY_LIST.get(v);
     }
 
     /**

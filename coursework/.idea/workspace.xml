@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,12 +318,18 @@
       <option name="project" value="LOCAL" />
       <updated>1615211873823</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="commented out the thread sleeps">
+      <created>1617787564329</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1617787564329</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="." />
     <MESSAGE value="added file information in FileParser API" />
     <MESSAGE value="more meaningful variable names" />
     <MESSAGE value="code styles" />
@@ -347,33 +354,34 @@
     <MESSAGE value="added functionality to FileParser API to handle excess whitespaces" />
     <MESSAGE value="FileParser API reads all test file edges correctly" />
     <MESSAGE value="algorithm ran on all data files" />
-    <option name="LAST_COMMIT_MESSAGE" value="algorithm ran on all data files" />
+    <MESSAGE value="commented out the thread sleeps" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out the thread sleeps" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615094879713">
+    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1615094879713" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617787495343">
+    <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617787556326">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617787495343" />
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1615211889962">
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617787556326" />
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom" timestamp="1617790496278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1615211889962" />
-    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1615211889962">
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617790496278" />
+    <state width="1323" height="215" key="GridCell.Tab.0.center" timestamp="1617790496278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1615211889962" />
-    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1615211889962">
+    <state width="1323" height="215" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617790496278" />
+    <state width="1323" height="215" key="GridCell.Tab.0.left" timestamp="1617790496278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1615211889962" />
-    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1615211889962">
+    <state width="1323" height="215" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617790496278" />
+    <state width="1323" height="215" key="GridCell.Tab.0.right" timestamp="1617790496278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1615211889962" />
+    <state width="1323" height="215" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617790496278" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1615210741081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
