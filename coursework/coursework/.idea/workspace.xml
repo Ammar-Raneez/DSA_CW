@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../~WRL0540.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_Report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$_Report.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~WRL0540.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/EdmondsCarp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +50,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/coursework/coursework" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DSA_CW-master/coursework" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -104,6 +110,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615024945665</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented simple Flow Network API, based on input number of vertices">
+      <created>1615041336630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615041336630</updated>
     </task>
     <task id="LOCAL-00005" summary="implemented File Parser API, to be able to read and parse the input files">
       <created>1615045756298</created>
@@ -441,18 +454,12 @@
       <option name="project" value="LOCAL" />
       <updated>1617812282841</updated>
     </task>
-    <task id="LOCAL-00053" summary="code completed">
-      <created>1617814904097</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1617814904097</updated>
-    </task>
-    <option name="localTasksCounter" value="54" />
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added algorithm support comment in FlowNetwork API" />
     <MESSAGE value="added support print statements in EdmondsCarp API" />
     <MESSAGE value="got all test data files" />
     <MESSAGE value="added functionality to FileParser API to handle excess whitespaces" />
@@ -477,8 +484,7 @@
     <MESSAGE value="commented EdmondsCarp throws" />
     <MESSAGE value="commented Main and FlowEdge throws" />
     <MESSAGE value="removed unnecessary initial flow checking" />
-    <MESSAGE value="code completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="code completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary initial flow checking" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
@@ -489,50 +495,50 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="478" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617814901079" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1617815353264">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1617812757618">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1617815353264" />
-    <state width="1323" height="227" key="GridCell.Tab.0.bottom" timestamp="1617815064827">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1617812757618" />
+    <state width="1323" height="295" key="GridCell.Tab.0.bottom" timestamp="1617814980575">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.0.center" timestamp="1617815064827">
+    <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617814980575" />
+    <state width="1323" height="295" key="GridCell.Tab.0.center" timestamp="1617814980575">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.0.left" timestamp="1617815064827">
+    <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1617814980575" />
+    <state width="1323" height="295" key="GridCell.Tab.0.left" timestamp="1617814980575">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.0.right" timestamp="1617815064827">
+    <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1617814980575" />
+    <state width="1323" height="295" key="GridCell.Tab.0.right" timestamp="1617814980575">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1617815064828">
+    <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1617814980575" />
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1617813182540">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617815064828" />
-    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1617815064827">
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1617813182540" />
+    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1617813182539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1617815064827">
+    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1617813182539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
-    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1617815064827">
+    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1617813182539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1617815064827" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1617813182539" />
     <state x="329" y="0" key="SettingsEditor" timestamp="1617781691905">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="329" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1617781691905" />
-    <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1617815302558">
+    <state x="366" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1617781426681">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="366" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1617815302558" />
+    <state x="366" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1617781426681" />
     <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617807948585">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
