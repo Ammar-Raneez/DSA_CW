@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) {
         FileParser parser;
         try {
-            parser = new FileParser("test files/example.txt");
+            parser = new FileParser("test files/ladder_1.txt");
         } catch (FileNotFoundException fe) {
             // file was not there
             System.out.println("[ERROR] --> File could not be found!");

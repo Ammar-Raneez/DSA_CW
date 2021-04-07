@@ -185,7 +185,8 @@ public class EdmondsCarp {
      */
     private void validVertex(int v) {
         if (v < 0 || v >= VERTICES) {
-            throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + VERTICES + " and greater than 0");
+            throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + VERTICES +
+                    " and greater than 0");
         }
     }
 }
