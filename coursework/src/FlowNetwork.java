@@ -30,6 +30,7 @@ public class FlowNetwork {
     /**
      * Initialize an empty flow network with V vertices and 0 edges
      * @param V - number of vertices in the network
+     * @throws IllegalArgumentException if vertex total is negative
      */
     public FlowNetwork(int V) {
         if (V < 0) {
@@ -74,7 +75,7 @@ public class FlowNetwork {
     /**
      * Add an edge to the network
      * @param edge - edge to be added
-     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      */
     public void addEdge(FlowEdge edge) {
         // Get the edges forward and backward vertex
@@ -93,7 +94,7 @@ public class FlowNetwork {
     /**
      * Delete an edge from the network
      * @param edge - edge to delete
-     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      */
     public void deleteEdge(FlowEdge edge) {
         int v = edge.from();
@@ -154,7 +155,7 @@ public class FlowNetwork {
     /**
      * @param v - whose list to get
      * @return - an Array list of type FlowEdge (the list of vertices)
-     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      */
     public ArrayList<FlowEdge> getAdjacent(int v) {
         validVertex(v);
@@ -178,7 +179,7 @@ public class FlowNetwork {
     /**
      * vertex validation
      * @param v - which vertex to validate
-     * throws IllegalArgumentException if vertex is out of bounds of 0 and V
+     * @throws IllegalArgumentException if vertex is out of bounds of 0 and V-1
      * starts from 0, therefore will go till total-1
      */
     private void validVertex(int v) {
