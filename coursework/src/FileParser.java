@@ -98,7 +98,7 @@ public class FileParser {
                 this.edgeData.add(new ArrayList<>(Arrays.asList(v, w, capacity)));
                 this.edges++;
             } catch (Exception e) {
-                throw new Exception();
+                throw new Exception("[ERROR] --> this line is not in the expected format of 3 space separated integers");
             }
         }
     }
@@ -127,7 +127,7 @@ public class FileParser {
         try {
             this.vertices = Integer.parseInt(this.SCANNER.nextLine().trim());
         } catch (Exception e) {
-           throw new Exception();
+           throw new Exception("[ERROR] --> file is empty OR the first line is not of right format");
         }
     }
 

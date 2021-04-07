@@ -40,6 +40,7 @@ public class Main {
             flowNetwork = new FlowNetwork(parser);
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("[ERROR] --> stopping program...");
             return;
         }
 

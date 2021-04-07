@@ -32,13 +32,13 @@ public class FlowEdge {
         try {
             // only positive integers are allowed
             if (vertexFrom < 0 || vertexTo < 0 || capacity < 0) {
-                throw new Exception();
+                throw new IllegalArgumentException("[ERROR] --> from, to, and capacity must be non-negative integers");
             }
             this.VERTEX_FROM = vertexFrom;
             this.VERTEX_TO = vertexTo;
             this.CAPACITY = capacity;
         } catch (Exception e) {
-            throw new IllegalArgumentException("[ERROR] - Illegal Arguments passed");
+            throw new IllegalArgumentException("[ERROR] --> Illegal Arguments passed");
         }
     }
 
@@ -79,7 +79,7 @@ public class FlowEdge {
             return this.VERTEX_TO;
         } else if (vertex == VERTEX_TO) {
             return this.VERTEX_FROM;
-        } throw new IllegalArgumentException("Illegal Vertex");
+        } throw new IllegalArgumentException("[ERROR] --> Illegal Vertex, vertex specified is neither a from or to");
     }
 
     /**
@@ -95,7 +95,7 @@ public class FlowEdge {
         // forward edge, vertex = w means V->W
         else if (vertex == VERTEX_TO) {
             return CAPACITY - flow;
-        } throw new IllegalArgumentException("Illegal Vertex");
+        } throw new IllegalArgumentException("[ERROR] --> Illegal Vertex, vertex specified is neither a from or to");
     }
 
     /**
@@ -107,7 +107,7 @@ public class FlowEdge {
      */
     public void addResidualFlow(int vertex, int delta) {
         if (delta < 0) {
-            throw new IllegalArgumentException("Illegal Delta, please use Non-negative integers");
+            throw new IllegalArgumentException("[ERROR] --> Illegal Delta, must be non-negative");
         }
         // backward edge
         if (vertex == VERTEX_FROM) {
@@ -119,15 +119,15 @@ public class FlowEdge {
         }
         // invalid vertex
         else {
-            throw new IllegalArgumentException("Illegal Vertex");
+            throw new IllegalArgumentException("[ERROR] --> Illegal Vertex, vertex specified is neither a from or to");
         }
 
         // flow must always be between 0 and capacity
         if (flow < 0) {
-            throw new IllegalArgumentException("Flow must be positive");
+            throw new IllegalArgumentException("[ERROR] --> Flow must be positive");
         }
         if (flow > CAPACITY) {
-            throw new IllegalArgumentException("Flow must not exceed allowed capacity");
+            throw new IllegalArgumentException("[ERROR] --> Flow must not exceed allowed capacity");
         }
     }
 

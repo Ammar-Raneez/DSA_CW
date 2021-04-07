@@ -33,7 +33,7 @@ public class FlowNetwork {
      */
     public FlowNetwork(int V) {
         if (V < 0) {
-            throw new IllegalArgumentException("Negative Vertices not allowed");
+            throw new IllegalArgumentException("[ERROR] --> Negative Vertices not allowed");
         }
         this.vertices = V;
         ADJACENCY_LIST = new ArrayList<>();
@@ -59,7 +59,7 @@ public class FlowNetwork {
         this.vertices = parser.getVerticesTotal();
 
         if (this.edges < 0 || this.vertices < 0) {
-            throw new IllegalArgumentException("Negative edges or vertices not allowed");
+            throw new IllegalArgumentException("[ERROR] --> Negative edges or vertices not allowed");
         }
 
         // Add all the read edges into the Network
@@ -183,7 +183,7 @@ public class FlowNetwork {
      */
     private void validVertex(int v) {
         if (v < 0 || v >= vertices) {
-            throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + vertices + " and greater than 0");
+            throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + vertices + " and greater than 0");
         }
     }
 }

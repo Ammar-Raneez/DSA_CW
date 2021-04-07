@@ -39,15 +39,16 @@ public class EdmondsCarp {
 
         // same source and target no flow
         if (source == target) {
-            throw new IllegalArgumentException("Source and target are the same");
+            throw new IllegalArgumentException("[ERROR] --> Source and target are the same");
         }
 
-        // flow is not feasible
+        // check if the initial flow is feasible
         if (!isFeasible(flowNetwork, source, target)) {
-            throw new IllegalArgumentException("Infeasible flow");
+            throw new IllegalArgumentException("[ERROR] --> Infeasible initial flow value");
         }
 
-        System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " + flowNetwork.getNumberOfVertices() + "\n\n");
+        System.out.println("Flow Network: Edges = "  + flowNetwork.getNumberOfEdges() + ", Vertices = " +
+                flowNetwork.getNumberOfVertices() + "\n\n");
 
         // Ford Fulkerson Algorithm, while there exists an augmenting path keep going
         while (hasAugmentingPath(flowNetwork, source, target)) {
@@ -118,7 +119,7 @@ public class EdmondsCarp {
      * @param vertex - which vertex in the flow network
      * @return - the excess flow
      */
-    private double excess(FlowNetwork flowNetwork, int vertex) {
+    private double excessFlow(FlowNetwork flowNetwork, int vertex) {
         double excessFlow = 0.0;
 
         for (FlowEdge edge : flowNetwork.getAdjacent(vertex)) {
@@ -141,33 +142,34 @@ public class EdmondsCarp {
      */
     private boolean isFeasible(FlowNetwork flowNetwork, int source, int sink) {
 
-        // check that capacity constraints are satisfied
+        // check whether all edges satisfy their capacity constraints
         for (int vertex = 0; vertex < flowNetwork.getNumberOfVertices(); vertex++) {
             for (FlowEdge edge : flowNetwork.getAdjacent(vertex)) {
                 if (edge.getFlow() < -CUT_OFF_VALUE_FOR_EDGE_VALIDATION ||
                         edge.getFlow() > edge.getCapacity() + CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-                    System.err.println("Edge does not satisfy capacity constraints: " + edge);
+                    System.out.println("Edge does not satisfy capacity constraints: " + edge);
                     return false;
                 }
             }
         }
 
         // net flow must be zero for all, except source and sink
-        if (Math.abs(flowValue + excess(flowNetwork, source)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-            System.out.println("Excess at source = " + excess(flowNetwork, source));
+        if (Math.abs(flowValue + excessFlow(flowNetwork, source)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
+            System.out.println("Excess at source = " + excessFlow(flowNetwork, source));
             System.out.println("Max flow = " + flowValue);
             return false;
         }
-        if (Math.abs(flowValue - excess(flowNetwork, sink)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
-            System.out.println("Excess at sink = " + excess(flowNetwork, sink));
+        if (Math.abs(flowValue - excessFlow(flowNetwork, sink)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
+            System.out.println("Excess at sink = " + excessFlow(flowNetwork, sink));
             System.out.println("Max flow = " + flowValue);
             return false;
         }
         for (int vertex = 0; vertex < flowNetwork.getNumberOfVertices(); vertex++) {
+            // does not have to be zero for source or sink
             if (vertex == source || vertex == sink) {
                 continue;
             }
-            if (Math.abs(excess(flowNetwork, vertex)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
+            if (Math.abs(excessFlow(flowNetwork, vertex)) > CUT_OFF_VALUE_FOR_EDGE_VALIDATION) {
                 System.out.println("Net flow out of " + vertex + " doesn't equal zero");
                 return false;
             }
@@ -183,7 +185,7 @@ public class EdmondsCarp {
      */
     private void validVertex(int v) {
         if (v < 0 || v >= VERTICES) {
-            throw new IllegalArgumentException("Illegal vertex choice: It must be less than " + VERTICES + " and greater than 0");
+            throw new IllegalArgumentException("[ERROR] --> Illegal vertex choice: It must be less than " + VERTICES + " and greater than 0");
         }
     }
 }

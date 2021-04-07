@@ -4,6 +4,9 @@
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EdmondsCarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdmondsCarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +41,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -409,12 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617803597408</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="catch multiple different errors">
+      <created>1617807292455</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1617807292455</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added TODO comments, to be continued" />
     <MESSAGE value="added TODO comments, to be continued&#10;Removed unused import from FordFulkerson API" />
     <MESSAGE value="moved print statement to dedicated private method" />
     <MESSAGE value="separated method concerns in FileParser API" />
@@ -439,17 +452,18 @@
     <MESSAGE value="made conditioning easier in FlowEdge" />
     <MESSAGE value="delete edge reduces edge count" />
     <MESSAGE value="validating invalid vertex values in EdmondsCarp" />
-    <option name="LAST_COMMIT_MESSAGE" value="validating invalid vertex values in EdmondsCarp" />
+    <MESSAGE value="catch multiple different errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="catch multiple different errors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617803594782">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617807290036">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617803594782" />
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617807290036" />
     <state width="1323" height="267" key="GridCell.Tab.0.bottom" timestamp="1617799323084">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -490,9 +504,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="366" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1617781426681" />
+    <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617807948585">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738@0.0.1366.738" timestamp="1617807948585" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1615090488934">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1615090488934" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1617807448142">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1617807448142" />
   </component>
 </project>
