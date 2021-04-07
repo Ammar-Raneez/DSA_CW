@@ -30,6 +30,10 @@ public class FlowEdge {
      */
     public FlowEdge(int vertexFrom, int vertexTo, int capacity) {
         try {
+            // only positive integers are allowed
+            if (vertexFrom < 0 || vertexTo < 0 || capacity < 0) {
+                throw new Exception();
+            }
             this.VERTEX_FROM = vertexFrom;
             this.VERTEX_TO = vertexTo;
             this.CAPACITY = capacity;
@@ -102,7 +106,7 @@ public class FlowEdge {
      * is invalid
      */
     public void addResidualFlow(int vertex, int delta) {
-        if (!(delta >= 0)) {
+        if (delta < 0) {
             throw new IllegalArgumentException("Illegal Delta, please use Non-negative integers");
         }
         // backward edge
@@ -119,10 +123,10 @@ public class FlowEdge {
         }
 
         // flow must always be between 0 and capacity
-        if (!(flow >= 0)) {
+        if (flow < 0) {
             throw new IllegalArgumentException("Flow must be positive");
         }
-        if (!(flow <= CAPACITY)) {
+        if (flow > CAPACITY) {
             throw new IllegalArgumentException("Flow must not exceed allowed capacity");
         }
     }

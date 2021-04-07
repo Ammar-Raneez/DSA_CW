@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c28e12f-77f1-4e01-b8ae-9f23144d92ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/FileParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coursework/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coursework/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlowEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlowEdge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,12 +373,18 @@
       <option name="project" value="LOCAL" />
       <updated>1617798030914</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added functionality to file parser to look out for problematic files">
+      <created>1617799351419</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1617799351419</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added delete operation into FlowNetwork" />
     <MESSAGE value="added DFS operation into FlowNetwork" />
     <MESSAGE value="commented FlowNetwork BFS API" />
     <MESSAGE value="moved main() to dedicated class" />
@@ -406,17 +409,18 @@
     <MESSAGE value="proper commented FileParser" />
     <MESSAGE value="proper commented EdmondsCarp" />
     <MESSAGE value="added student ID to header" />
-    <option name="LAST_COMMIT_MESSAGE" value="added student ID to header" />
+    <MESSAGE value="added functionality to file parser to look out for problematic files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality to file parser to look out for problematic files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617790347880">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="247" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1617790347880" />
-    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617798027224">
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1617799347306">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617798027223" />
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617799347306" />
     <state width="1323" height="267" key="GridCell.Tab.0.bottom" timestamp="1617799323084">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
