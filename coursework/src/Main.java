@@ -18,6 +18,12 @@ import java.io.FileNotFoundException;
  * @author Ammar Raneez | 2019163 | W1761196
  */
 public class Main {
+
+    /**
+     * Main method that will run the program
+     * takes a file, makes the FileParser, creates a FlowNetwork with the parser
+     * and calculates the max flow from EdmondsCarp
+     */
     public static void main(String[] args) {
         FileParser parser;
         try {

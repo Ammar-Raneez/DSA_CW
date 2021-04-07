@@ -30,11 +30,12 @@ public class FlowEdge {
      * @throws IllegalArgumentException when parameters are non-negative integers or arguments are invalid completely
      */
     public FlowEdge(int vertexFrom, int vertexTo, int capacity) {
+        // only positive integers are allowed
+        if (vertexFrom < 0 || vertexTo < 0 || capacity < 0) {
+            throw new IllegalArgumentException("[ERROR] --> from, to, and capacity must be non-negative integers");
+        }
+
         try {
-            // only positive integers are allowed
-            if (vertexFrom < 0 || vertexTo < 0 || capacity < 0) {
-                throw new IllegalArgumentException("[ERROR] --> from, to, and capacity must be non-negative integers");
-            }
             this.VERTEX_FROM = vertexFrom;
             this.VERTEX_TO = vertexTo;
             this.CAPACITY = capacity;
